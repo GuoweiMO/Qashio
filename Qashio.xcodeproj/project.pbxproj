@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E45394451BBFD38A001040EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394441BBFD38A001040EC /* AppDelegate.swift */; };
+		E45394471BBFD38A001040EC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394461BBFD38A001040EC /* FirstViewController.swift */; };
+		E45394491BBFD38A001040EC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394481BBFD38A001040EC /* SecondViewController.swift */; };
+		E453944C1BBFD38A001040EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E453944A1BBFD38A001040EC /* Main.storyboard */; };
+		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
+		E45394511BBFD38A001040EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */; };
+		E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453945B1BBFD38A001040EC /* QashioTests.swift */; };
+		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E45394581BBFD38A001040EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E45394391BBFD38A001040EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E45394401BBFD38A001040EC;
+			remoteInfo = Qashio;
+		};
+		E45394631BBFD38A001040EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E45394391BBFD38A001040EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E45394401BBFD38A001040EC;
+			remoteInfo = Qashio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E45394411BBFD38A001040EC /* Qashio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qashio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45394441BBFD38A001040EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E45394461BBFD38A001040EC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E45394481BBFD38A001040EC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E453944B1BBFD38A001040EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E45394501BBFD38A001040EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45394571BBFD38A001040EC /* QashioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E453945B1BBFD38A001040EC /* QashioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioTests.swift; sourceTree = "<group>"; };
+		E453945D1BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45394621BBFD38A001040EC /* QashioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45394661BBFD38A001040EC /* QashioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioUITests.swift; sourceTree = "<group>"; };
+		E45394681BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E453943E1BBFD38A001040EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45394541BBFD38A001040EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E453945F1BBFD38A001040EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E45394381BBFD38A001040EC = {
+			isa = PBXGroup;
+			children = (
+				E45394431BBFD38A001040EC /* Qashio */,
+				E453945A1BBFD38A001040EC /* QashioTests */,
+				E45394651BBFD38A001040EC /* QashioUITests */,
+				E45394421BBFD38A001040EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E45394421BBFD38A001040EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E45394411BBFD38A001040EC /* Qashio.app */,
+				E45394571BBFD38A001040EC /* QashioTests.xctest */,
+				E45394621BBFD38A001040EC /* QashioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45394431BBFD38A001040EC /* Qashio */ = {
+			isa = PBXGroup;
+			children = (
+				E45394441BBFD38A001040EC /* AppDelegate.swift */,
+				E45394461BBFD38A001040EC /* FirstViewController.swift */,
+				E45394481BBFD38A001040EC /* SecondViewController.swift */,
+				E453944A1BBFD38A001040EC /* Main.storyboard */,
+				E453944D1BBFD38A001040EC /* Assets.xcassets */,
+				E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */,
+				E45394521BBFD38A001040EC /* Info.plist */,
+			);
+			path = Qashio;
+			sourceTree = "<group>";
+		};
+		E453945A1BBFD38A001040EC /* QashioTests */ = {
+			isa = PBXGroup;
+			children = (
+				E453945B1BBFD38A001040EC /* QashioTests.swift */,
+				E453945D1BBFD38A001040EC /* Info.plist */,
+			);
+			path = QashioTests;
+			sourceTree = "<group>";
+		};
+		E45394651BBFD38A001040EC /* QashioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E45394661BBFD38A001040EC /* QashioUITests.swift */,
+				E45394681BBFD38A001040EC /* Info.plist */,
+			);
+			path = QashioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E45394401BBFD38A001040EC /* Qashio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E453946B1BBFD38A001040EC /* Build configuration list for PBXNativeTarget "Qashio" */;
+			buildPhases = (
+				E453943D1BBFD38A001040EC /* Sources */,
+				E453943E1BBFD38A001040EC /* Frameworks */,
+				E453943F1BBFD38A001040EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qashio;
+			productName = Qashio;
+			productReference = E45394411BBFD38A001040EC /* Qashio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E45394561BBFD38A001040EC /* QashioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E453946E1BBFD38A001040EC /* Build configuration list for PBXNativeTarget "QashioTests" */;
+			buildPhases = (
+				E45394531BBFD38A001040EC /* Sources */,
+				E45394541BBFD38A001040EC /* Frameworks */,
+				E45394551BBFD38A001040EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E45394591BBFD38A001040EC /* PBXTargetDependency */,
+			);
+			name = QashioTests;
+			productName = QashioTests;
+			productReference = E45394571BBFD38A001040EC /* QashioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E45394611BBFD38A001040EC /* QashioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45394711BBFD38A001040EC /* Build configuration list for PBXNativeTarget "QashioUITests" */;
+			buildPhases = (
+				E453945E1BBFD38A001040EC /* Sources */,
+				E453945F1BBFD38A001040EC /* Frameworks */,
+				E45394601BBFD38A001040EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E45394641BBFD38A001040EC /* PBXTargetDependency */,
+			);
+			name = QashioUITests;
+			productName = QashioUITests;
+			productReference = E45394621BBFD38A001040EC /* QashioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E45394391BBFD38A001040EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Guowei Mo";
+				TargetAttributes = {
+					E45394401BBFD38A001040EC = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					E45394561BBFD38A001040EC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = E45394401BBFD38A001040EC;
+					};
+					E45394611BBFD38A001040EC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = E45394401BBFD38A001040EC;
+					};
+				};
+			};
+			buildConfigurationList = E453943C1BBFD38A001040EC /* Build configuration list for PBXProject "Qashio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E45394381BBFD38A001040EC;
+			productRefGroup = E45394421BBFD38A001040EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E45394401BBFD38A001040EC /* Qashio */,
+				E45394561BBFD38A001040EC /* QashioTests */,
+				E45394611BBFD38A001040EC /* QashioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E453943F1BBFD38A001040EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45394511BBFD38A001040EC /* LaunchScreen.storyboard in Resources */,
+				E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */,
+				E453944C1BBFD38A001040EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45394551BBFD38A001040EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45394601BBFD38A001040EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E453943D1BBFD38A001040EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45394491BBFD38A001040EC /* SecondViewController.swift in Sources */,
+				E45394451BBFD38A001040EC /* AppDelegate.swift in Sources */,
+				E45394471BBFD38A001040EC /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45394531BBFD38A001040EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E453945E1BBFD38A001040EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E45394591BBFD38A001040EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E45394401BBFD38A001040EC /* Qashio */;
+			targetProxy = E45394581BBFD38A001040EC /* PBXContainerItemProxy */;
+		};
+		E45394641BBFD38A001040EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E45394401BBFD38A001040EC /* Qashio */;
+			targetProxy = E45394631BBFD38A001040EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E453944A1BBFD38A001040EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E453944B1BBFD38A001040EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E45394501BBFD38A001040EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E45394691BBFD38A001040EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E453946A1BBFD38A001040EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E453946C1BBFD38A001040EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Qashio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Qashio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E453946D1BBFD38A001040EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Qashio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Qashio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E453946F1BBFD38A001040EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QashioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Guowei.QashioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qashio.app/Qashio";
+			};
+			name = Debug;
+		};
+		E45394701BBFD38A001040EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QashioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Guowei.QashioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qashio.app/Qashio";
+			};
+			name = Release;
+		};
+		E45394721BBFD38A001040EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QashioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Guowei.QashioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Qashio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E45394731BBFD38A001040EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QashioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Guowei.QashioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Qashio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E453943C1BBFD38A001040EC /* Build configuration list for PBXProject "Qashio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45394691BBFD38A001040EC /* Debug */,
+				E453946A1BBFD38A001040EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E453946B1BBFD38A001040EC /* Build configuration list for PBXNativeTarget "Qashio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E453946C1BBFD38A001040EC /* Debug */,
+				E453946D1BBFD38A001040EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E453946E1BBFD38A001040EC /* Build configuration list for PBXNativeTarget "QashioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E453946F1BBFD38A001040EC /* Debug */,
+				E45394701BBFD38A001040EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E45394711BBFD38A001040EC /* Build configuration list for PBXNativeTarget "QashioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45394721BBFD38A001040EC /* Debug */,
+				E45394731BBFD38A001040EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E45394391BBFD38A001040EC /* Project object */;
+}
