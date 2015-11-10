@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9D1BBFD7C50084FB5D /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9E1BBFD7C50084FB5D /* LandingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDA91BBFD7C50084FB5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9F1BBFD7C50084FB5D /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA01BBFD7C50084FB5D /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429CDAE1BBFD8000084FB5D /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; };
+		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; };
+		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; };
+		E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9D1BBFD7C50084FB5D /* HomeViewController.swift */; };
+		E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9E1BBFD7C50084FB5D /* LandingViewController.swift */; };
+		E429CDA91BBFD7C50084FB5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9F1BBFD7C50084FB5D /* LoginViewController.swift */; };
+		E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA01BBFD7C50084FB5D /* ProfileViewController.swift */; };
+		E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */; };
+		E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */; };
+		E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */; };
+		E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429CDAE1BBFD8000084FB5D /* Main.storyboard */; };
+		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; };
 		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
-		E45394511BBFD38A001040EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */; };
 		E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453945B1BBFD38A001040EC /* QashioTests.swift */; };
 		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		E45394411BBFD38A001040EC /* Qashio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qashio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E45394501BBFD38A001040EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394571BBFD38A001040EC /* QashioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E453945B1BBFD38A001040EC /* QashioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioTests.swift; sourceTree = "<group>"; };
@@ -93,7 +91,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E429CD991BBFD79B0084FB5D /* view */ = {
+		E429CD991BBFD79B0084FB5D /* controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */,
@@ -106,7 +104,7 @@
 				E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */,
 				E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */,
 			);
-			name = view;
+			name = controllers;
 			sourceTree = "<group>";
 		};
 		E45394381BBFD38A001040EC = {
@@ -132,12 +130,12 @@
 		E45394431BBFD38A001040EC /* Qashio */ = {
 			isa = PBXGroup;
 			children = (
-				E429CD991BBFD79B0084FB5D /* view */,
+				E46EA0BE1BF2A4890057BE65 /* models */,
+				E429CD991BBFD79B0084FB5D /* controllers */,
 				E453944D1BBFD38A001040EC /* Assets.xcassets */,
 				E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */,
 				E429CDAE1BBFD8000084FB5D /* Main.storyboard */,
 				E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */,
-				E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */,
 				E45394521BBFD38A001040EC /* Info.plist */,
 				E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */,
 			);
@@ -160,6 +158,13 @@
 				E45394681BBFD38A001040EC /* Info.plist */,
 			);
 			path = QashioUITests;
+			sourceTree = "<group>";
+		};
+		E46EA0BE1BF2A4890057BE65 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +273,6 @@
 			files = (
 				E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */,
 				E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */,
-				E45394511BBFD38A001040EC /* LaunchScreen.storyboard in Resources */,
 				E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,17 +341,6 @@
 			targetProxy = E45394631BBFD38A001040EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E45394501BBFD38A001040EC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E45394691BBFD38A001040EC /* Debug */ = {
