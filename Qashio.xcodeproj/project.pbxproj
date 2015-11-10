@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E45394451BBFD38A001040EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394441BBFD38A001040EC /* AppDelegate.swift */; };
-		E45394471BBFD38A001040EC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394461BBFD38A001040EC /* FirstViewController.swift */; };
-		E45394491BBFD38A001040EC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394481BBFD38A001040EC /* SecondViewController.swift */; };
-		E453944C1BBFD38A001040EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E453944A1BBFD38A001040EC /* Main.storyboard */; };
+		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9D1BBFD7C50084FB5D /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9E1BBFD7C50084FB5D /* LandingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDA91BBFD7C50084FB5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9F1BBFD7C50084FB5D /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA01BBFD7C50084FB5D /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429CDAE1BBFD8000084FB5D /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
 		E45394511BBFD38A001040EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */; };
 		E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453945B1BBFD38A001040EC /* QashioTests.swift */; };
@@ -35,11 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsSumViewController.swift; sourceTree = "<group>"; };
+		E429CD9D1BBFD7C50084FB5D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E429CD9E1BBFD7C50084FB5D /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		E429CD9F1BBFD7C50084FB5D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E429CDA01BBFD7C50084FB5D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedListViewController.swift; sourceTree = "<group>"; };
+		E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E429CDAE1BBFD8000084FB5D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		E45394411BBFD38A001040EC /* Qashio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qashio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E45394441BBFD38A001040EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E45394461BBFD38A001040EC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E45394481BBFD38A001040EC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		E453944B1BBFD38A001040EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45394501BBFD38A001040EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		E45394621BBFD38A001040EC /* QashioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45394661BBFD38A001040EC /* QashioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioUITests.swift; sourceTree = "<group>"; };
 		E45394681BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Qashio-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E429CD991BBFD79B0084FB5D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */,
+				E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */,
+				E429CD9D1BBFD7C50084FB5D /* HomeViewController.swift */,
+				E429CD9E1BBFD7C50084FB5D /* LandingViewController.swift */,
+				E429CD9F1BBFD7C50084FB5D /* LoginViewController.swift */,
+				E429CDA01BBFD7C50084FB5D /* ProfileViewController.swift */,
+				E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */,
+				E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */,
+				E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		E45394381BBFD38A001040EC = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +132,14 @@
 		E45394431BBFD38A001040EC /* Qashio */ = {
 			isa = PBXGroup;
 			children = (
-				E45394441BBFD38A001040EC /* AppDelegate.swift */,
-				E45394461BBFD38A001040EC /* FirstViewController.swift */,
-				E45394481BBFD38A001040EC /* SecondViewController.swift */,
-				E453944A1BBFD38A001040EC /* Main.storyboard */,
+				E429CD991BBFD79B0084FB5D /* view */,
 				E453944D1BBFD38A001040EC /* Assets.xcassets */,
+				E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */,
+				E429CDAE1BBFD8000084FB5D /* Main.storyboard */,
+				E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */,
 				E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */,
 				E45394521BBFD38A001040EC /* Info.plist */,
+				E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */,
 			);
 			path = Qashio;
 			sourceTree = "<group>";
@@ -190,6 +224,7 @@
 		E45394391BBFD38A001040EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Guowei Mo";
 				TargetAttributes = {
@@ -231,9 +266,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */,
+				E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */,
 				E45394511BBFD38A001040EC /* LaunchScreen.storyboard in Resources */,
 				E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */,
-				E453944C1BBFD38A001040EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45394491BBFD38A001040EC /* SecondViewController.swift in Sources */,
-				E45394451BBFD38A001040EC /* AppDelegate.swift in Sources */,
-				E45394471BBFD38A001040EC /* FirstViewController.swift in Sources */,
+				E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */,
+				E429CDA91BBFD7C50084FB5D /* LoginViewController.swift in Sources */,
+				E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */,
+				E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */,
+				E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */,
+				E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */,
+				E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */,
+				E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */,
+				E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */,
+				E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +339,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E453944A1BBFD38A001040EC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E453944B1BBFD38A001040EC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E453944F1BBFD38A001040EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -400,10 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Qashio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Qashio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Qashio/Qashio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,10 +449,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Qashio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Qashio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Qashio/Qashio-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +525,7 @@
 				E453946D1BBFD38A001040EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E453946E1BBFD38A001040EC /* Build configuration list for PBXNativeTarget "QashioTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +534,7 @@
 				E45394701BBFD38A001040EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45394711BBFD38A001040EC /* Build configuration list for PBXNativeTarget "QashioUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +543,7 @@
 				E45394731BBFD38A001040EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
