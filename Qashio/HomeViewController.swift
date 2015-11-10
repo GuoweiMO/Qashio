@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
 //        let date = NSDate()
 //        let calendar = NSCalendar.currentCalendar()
 //        let components = calendar.components(NSCalendarUnit.CalendarUnitMonth, fromDate: date)
-        return "1";
+        return "1"; //swift is nice
     }
 
     override func didReceiveMemoryWarning() {
