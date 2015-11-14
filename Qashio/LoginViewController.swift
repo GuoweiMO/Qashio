@@ -11,11 +11,16 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var passWord: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    @IBAction func verifyUserLogin(sender: AnyObject) {
+    
+    @IBAction func checkUserLogin(sender: AnyObject) {
+        NSLog("userName: " + userName.text!)
+        NSLog("password:" + passWord.text!)
         if true{
             let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("mainNav")
             self.showViewController(vc as! UIViewController, sender: vc);

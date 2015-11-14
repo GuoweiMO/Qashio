@@ -12,13 +12,14 @@ import UIKit
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var RegisterBtn: UIButton!
-
+    var scrollView: UIScrollView = UIScrollView.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 //        self.view  = scroller
 //        scroller.scrollEnabled = true
-//        scroller.contentSize = CGSize(width:600, height: 900)
+        scrollView.contentSize = CGSizeMake(320, 900)
     }
     @IBAction func verifyUerRegistration(sender: AnyObject) {
         if true{
