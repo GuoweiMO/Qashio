@@ -525,8 +525,8 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Quf-TK-QRN"/>
                                                 <exclude reference="9Fc-Q5-eAb"/>
+                                                <exclude reference="Quf-TK-QRN"/>
                                             </mask>
                                         </variation>
                                     </textField>
