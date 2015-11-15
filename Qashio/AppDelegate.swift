@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.userLoggedIn = self.verifyuserInfo()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let storyboard: UIStoryboard = UIStoryboard( name: "Main", bundle: nil)
-        var viewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("Landing") ;
+        var viewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("landing") ;
         
         if self.userLoggedIn == true {
             viewController = storyboard.instantiateViewControllerWithIdentifier("mainNav") ;
@@ -41,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if userName != nil && userPassword != nil {
             //send the user credentials to the server DB
+            NSLog("user_name: " + userName!)
+            NSLog("password: " + userPassword!);
             userLoggedIn = true;
         }
         

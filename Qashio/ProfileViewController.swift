@@ -16,6 +16,15 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func processLogout(sender: AnyObject) {
+        let localData = NSUserDefaults.standardUserDefaults()
+        localData.removeObjectForKey("USER_NAME")
+        localData.removeObjectForKey("PASSWORD")
+        
+        let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("landing")
+        self.showViewController(vc as! UIViewController, sender: vc);
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

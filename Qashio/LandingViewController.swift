@@ -11,9 +11,13 @@ import UIKit
 
 class LandingViewController: UIViewController {
     
+    @IBOutlet weak var landingLoginBtn: UIButton!
+    @IBOutlet weak var landingRegisterBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        landingLoginBtn.layer.cornerRadius = 5
+        landingRegisterBtn.layer.cornerRadius = 5
     }
     
     override func didReceiveMemoryWarning() {
