@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        monthLabel.text = self.getCurrentMonth()
+        
     }
     
     func getCurrentMonth() -> String{
