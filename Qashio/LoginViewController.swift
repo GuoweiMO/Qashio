@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
         NSLog("password: " + passWord.text!)
         let localData = NSUserDefaults.standardUserDefaults()
 
-        let storedUserName = localData.valueForKey("USER_NAME") as? String
+        let storedUserName = localData.valueForKey("USER_NAME") as? String //as? return nil or String
         let storedPassword = localData.valueForKey("PASSWORD") as? String
         
         if storedUserName != nil && storedPassword != nil {
@@ -34,17 +34,40 @@ class LoginViewController: UIViewController {
             NSLog("password: " + storedPassword!)
         }
         
+        
         if  storedUserName == userName.text &&
             storedPassword == passWord.text {
                 localData.setValue(userName.text!, forKey: "USER_NAME");
                 localData.setValue(passWord.text!, forKey: "PASSWORD");
                 
-                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("mainNav")
-                self.showViewController(vc as! UIViewController, sender: vc);
+                let vc:UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainNav")
+                self.showViewController(vc, sender: vc);
         } else{
-            let alert:UIAlertController = UIAlertController.init(title: "ERROR" , message: "Your UserName or Password is not correct", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert:UIAlertController = UIAlertController(title: "ERROR" , message: "Your UserName or Password is not correct", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
+            
+//            let alertController = UIAlertController(title: "Email?", message: "Please input your email:", preferredStyle: .Alert)
+//            
+//            let confirmAction = UIAlertAction(title: "Confirm", style: .Default) { (_) in
+//                if let field:UITextField = alertController.textFields![0] {
+//                    // store your data
+//                    NSUserDefaults.standardUserDefaults().setObject(field.text, forKey: "userEmail")
+//                    NSUserDefaults.standardUserDefaults().synchronize()
+//                }
+//            }
+//            
+//            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (_) in }
+//            
+//            //add the input field
+//            alertController.addTextFieldWithConfigurationHandler { (textField) in
+//                textField.placeholder = "Email"
+//            }
+//            
+//            alertController.addAction(confirmAction)
+//            alertController.addAction(cancelAction)
+//            
+//            self.presentViewController(alertController, animated: true, completion: nil)
         }
 
         
@@ -54,7 +77,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
 

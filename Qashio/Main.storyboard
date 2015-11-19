@@ -295,9 +295,8 @@
         <!--Navigation Controller-->
         <scene sceneID="75M-DG-MJk">
             <objects>
-                <navigationController storyboardIdentifier="mainCtrl" toolbarHidden="NO" id="oyv-uj-0cX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainCtrl" id="oyv-uj-0cX" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FZJ-YW-gWE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -316,7 +315,7 @@
             </objects>
             <point key="canvasLocation" x="-1146" y="-1192"/>
         </scene>
-        <!--Choose your Categories-->
+        <!--Pick your Categories-->
         <scene sceneID="CzV-OA-DsS">
             <objects>
                 <viewController id="aBi-r8-43Q" customClass="CategoryViewController" customModule="Qashio" customModuleProvider="target" sceneMemberID="viewController">
@@ -325,11 +324,11 @@
                         <viewControllerLayoutGuide type="bottom" id="bEO-22-5EJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4cV-na-Z36">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-e2-nga">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="1700"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-e2-nga">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1658"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY8-Nl-R2G">
                                         <rect key="frame" x="254" y="145" width="91" height="21"/>
@@ -603,18 +602,17 @@
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Keg-zT-Gvc"/>
-                        <barButtonItem systemItem="done" id="cRt-NO-2H3">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Pick your Categories" id="9HZ-Eh-NZV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="81C-Pg-P2S">
                             <connections>
-                                <segue destination="05v-f4-LTR" kind="show" id="MSa-3h-rEz"/>
+                                <segue destination="05v-f4-LTR" kind="show" id="kqa-zs-TMs"/>
                             </connections>
                         </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" title="Choose your Categories" id="9HZ-Eh-NZV"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="1700"/>
+                    <size key="freeformSize" width="600" height="1650"/>
                     <connections>
                         <outlet property="categoryScrollView" destination="i6x-e2-nga" id="G9e-0j-cV8"/>
                     </connections>
@@ -632,7 +630,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dIo-HP-r5Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uZU-3R-2yR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -641,16 +639,10 @@
                             <outletCollection property="gestureRecognizers" destination="XGJ-SI-Fc6" appends="YES" id="2bu-Xr-LXD"/>
                         </connections>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vpT-pS-0ux"/>
-                        <barButtonItem title="Go To Conferences &gt;&gt;" id="Lbc-Pt-POl">
-                            <connections>
-                                <segue destination="49e-Tb-3d3" kind="showDetail" id="fSL-P9-ZqF"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Results" id="zDq-tl-RBg">
                         <barButtonItem key="backBarButtonItem" title="Back" id="2aT-HO-dmA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Conferences &gt;" id="0nk-io-bF6"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFU-6D-5ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
