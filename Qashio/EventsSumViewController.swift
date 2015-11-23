@@ -16,6 +16,9 @@ class EventSumViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        navigationItem.backBarButtonItem?.title = "Categories";
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
