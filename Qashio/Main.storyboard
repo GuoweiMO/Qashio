@@ -324,7 +324,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bEO-22-5EJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4cV-na-Z36">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1650"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="1586"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-e2-nga">
@@ -602,6 +602,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Pick your Categories" id="9HZ-Eh-NZV">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="81C-Pg-P2S">
@@ -1068,7 +1069,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iVt-hf-j4U" id="sl7-jH-azb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
