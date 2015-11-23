@@ -22,6 +22,8 @@
 		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
 		E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453945B1BBFD38A001040EC /* QashioTests.swift */; };
 		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
+		E47459E71C034781006A58CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
+		E47459ED1C03857C006A58CF /* MoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EC1C03857C006A58CF /* MoButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		E45394661BBFD38A001040EC /* QashioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioUITests.swift; sourceTree = "<group>"; };
 		E45394681BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Qashio-Bridging-Header.h"; sourceTree = "<group>"; };
+		E47459E61C034781006A58CF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E47459EC1C03857C006A58CF /* MoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 		E46EA0BE1BF2A4890057BE65 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				E47459E61C034781006A58CF /* Category.swift */,
+				E47459EC1C03857C006A58CF /* MoButton.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -303,11 +309,13 @@
 				E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */,
 				E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */,
 				E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */,
+				E47459ED1C03857C006A58CF /* MoButton.swift in Sources */,
 				E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */,
 				E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */,
 				E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */,
 				E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */,
 				E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */,
+				E47459E71C034781006A58CF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,14 +11,16 @@ import UIKit
 
 class EventSumViewController: UIViewController {
     
+    var selecedCategories:String = ""
+    @IBOutlet weak var sumLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        selecedCategories = "example "
+//        sumLabel.text = selecedCategories;
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        navigationItem.backBarButtonItem?.title = "Categories";
-//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
