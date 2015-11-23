@@ -22,16 +22,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func verifyUserLogin(sender: AnyObject) {
-        NSLog("userName: " + userName.text!)
-        NSLog("password: " + passWord.text!)
+        print("userName: " + userName.text!)
+        print("password: " + passWord.text!)
         let localData = NSUserDefaults.standardUserDefaults()
 
         let storedUserName = localData.valueForKey("USER_NAME") as? String //as? return nil or String
         let storedPassword = localData.valueForKey("PASSWORD") as? String
         
         if storedUserName != nil && storedPassword != nil {
-            NSLog("userName: " + storedUserName!)
-            NSLog("password: " + storedPassword!)
+            print("userName: " + storedUserName!)
+            print("password: " + storedPassword!)
         }
         
         
