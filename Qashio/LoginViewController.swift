@@ -29,14 +29,13 @@ class LoginViewController: UIViewController {
         let storedUserName = localData.valueForKey("USER_NAME") as? String //as? return nil or String
         let storedPassword = localData.valueForKey("PASSWORD") as? String
         
-        if storedUserName != nil && storedPassword != nil {
+        if storedUserName != nil && !storedPassword!.isEmpty && storedPassword != nil && !storedPassword!.isEmpty {
             print("userName: " + storedUserName!)
             print("password: " + storedPassword!)
         }
         
         
-        if  storedUserName == userName.text &&
-            storedPassword == passWord.text {
+        if  storedUserName == userName.text && storedPassword == passWord.text {
                 localData.setValue(userName.text!, forKey: "USER_NAME");
                 localData.setValue(passWord.text!, forKey: "PASSWORD");
                 

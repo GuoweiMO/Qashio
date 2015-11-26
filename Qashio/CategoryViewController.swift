@@ -33,19 +33,22 @@ class CategoryViewController: UIViewController {
     
     func createCategoryItems(){
         print(centerPt)
-        for var i = 0; i < 12; i++ {
+//        for var i = 0; i < categoryObj.categoryData.count; i++ {
+        var i = 0
+        for categoryItem in categoryObj.categoryData {
             let cateBtn = UIButton()
             cateBtn.setImage(UIImage(named: "IT_ico") , forState: UIControlState.Normal)
             cateBtns.append(cateBtn)
             cateBtn.frame = CGRect(x: Int(centerPt-50) , y: 20+140*i, width:100, height: 100)
-            cateBtn.setTitle("CS "+ String(Int(arc4random_uniform(12))), forState: .Normal )
+            cateBtn.setTitle(categoryItem.0, forState: .Normal ) //String(Int(arc4random_uniform(12)))
             let cateLabel = UILabel()
-            cateLabel.text = "Computer Science"
+            cateLabel.text = categoryItem.0
             cateLabel.frame = CGRect(x: 0 , y: cateBtn.frame.origin.y+110, width: UIScreen.mainScreen().bounds.width, height: 20)
             cateLabel.textAlignment = NSTextAlignment.Center
             categoryScrollView.addSubview(cateBtn)
             categoryScrollView.addSubview(cateLabel)
             cateBtn.addTarget(self, action: "didExpandSubCategories:", forControlEvents: UIControlEvents.TouchUpInside)
+            i++
         }
         
         var contentRect:CGRect = CGRectZero;
@@ -76,21 +79,24 @@ class CategoryViewController: UIViewController {
     func createSubCategoryItems(parent:UIButton){
         var subCateBtns = [UIButton]()
         let originY = parent.frame.origin.y
-        for var i = 0; i < 4; i++ {
+        var btnContents = categoryObj.categoryData[parent.currentTitle!]
+        let num = btnContents?.count
+        for var i = 0; i < num!; i++ {
+            print("subCate num: \(num)")
             let subBtn = MoButton()
             subCateBtns.append(subBtn)
             var xPos = Int(centerPt)
-            if i==0 || i==3{
+            if i==0 || i==num!-1{
                 xPos -= 20
             }
             
             subBtn.parentBtn = parent.currentTitle!
             subBtn.btnSeleted = false
             
-            subBtn.frame = CGRect(x: xPos, y: Int(originY)+25*i, width:100, height: 20)
+            subBtn.frame = CGRect(x: xPos, y: Int(originY)+25*i, width:120, height: 20)
             subBtn.backgroundColor = UIColor.orangeColor()
             subBtn.layer.cornerRadius = 10
-            subBtn.setTitle("iOS Dev", forState: UIControlState.Normal)
+            subBtn.setTitle(btnContents!.removeFirst(), forState: UIControlState.Normal)
             
             categoryScrollView.addSubview(subBtn)
             subBtn.addTarget(self, action: "didSelectSubCategories:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -115,7 +121,7 @@ class CategoryViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "completeSelection"){
             let eventSumVC:EventSumViewController = segue.destinationViewController as! EventSumViewController;
-            print(categoryObj.selectedCategories)
+            eventSumVC.selecedCategories = "set up string"
         }
     }
 

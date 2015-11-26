@@ -14,7 +14,18 @@ class Category {
     
     init(){
         self.categoryData = Dictionary<String, Set<String>>()
-        
+        self.categoryData = [
+            "Tech"          :   ["Hardware", "Cloud", "Network" , "Mobile", "Gaming"],
+            "Science"       :   ["Mathematics", "Physics", "Chemistry", "Biology"],
+            "Finance"       :   ["Fixed-Income", "Asset Management", "Risk", "Investment"],
+            "Business"      :   ["Consultancy", "Marketing", "Management"],
+            "Design"        :   ["Product","Web", "Innovation", "Advert"],
+            "Art"           :   ["Modern", "Impression", "Hyper-reality"],
+            "Music"         :   ["Jazz", "Countryside", "Rock", "Rap"],
+            "Sports"        :   ["Football", "Tennis", "Rugby", "Skiing"],
+            "Engineering"   :   ["Physical", "Mechanical", "Chemical", "Biological"],
+            "Humanity"      :   ["Literature", "History", "Philosophy", "Politics"]
+        ]
         self.selectedCategories = Dictionary<String, Set<String>>()
     }
     
