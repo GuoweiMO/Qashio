@@ -140,7 +140,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lOh-6n-3zs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4eq-IF-PxA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   USERNAME*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgZ-cm-dqM">
@@ -919,7 +919,7 @@
         <image name="self_image" width="1932" height="2400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xSf-7c-YuA"/>
-        <segue reference="QX2-06-e88"/>
+        <segue reference="Llv-67-MWg"/>
+        <segue reference="dDS-9k-wGj"/>
     </inferredMetricsTieBreakers>
 </document>
