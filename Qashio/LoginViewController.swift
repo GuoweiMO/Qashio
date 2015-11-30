@@ -30,12 +30,13 @@ class LoginViewController: UIViewController {
         let storedPassword = localData.valueForKey("PASSWORD") as? String
         
         if storedUserName != nil && !storedPassword!.isEmpty && storedPassword != nil && !storedPassword!.isEmpty {
-            print("userName: " + storedUserName!)
-            print("password: " + storedPassword!)
+            print("saved userName: " + storedUserName!)
+            print("saved password: " + storedPassword!)
         }
         
         
         if  storedUserName == userName.text && storedPassword == passWord.text {
+            //check against the data in db
                 localData.setValue(userName.text!, forKey: "USER_NAME");
                 localData.setValue(passWord.text!, forKey: "PASSWORD");
                 
@@ -68,8 +69,10 @@ class LoginViewController: UIViewController {
 //            
 //            self.presentViewController(alertController, animated: true, completion: nil)
         }
-
-        
+    }
+    
+    @IBAction func didForgetPassoword(sender: AnyObject) {
+        //TODO handle forget password
     }
     
     override func didReceiveMemoryWarning() {

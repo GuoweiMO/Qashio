@@ -16,6 +16,8 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
     var events = NSMutableArray()
     var blurView:UIView = UIView()
     var screenFrame:CGRect = CGRect()
+    let UKCities = Locations.LocConf.locations["UK"]
+    var allCitiesBtn = MoButton()
     
     @IBOutlet weak var eventsTableView: UITableView!
     @IBOutlet weak var pickCityBtn: UIButton!
@@ -41,9 +43,10 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let vc:UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainNav")
 //        vc.navigationItem.hidesBackButton = true
+//        vc.navigationController?.setNavigationBarHidden(true, animated: true)
 //        vc.navigationItem.title = "All Events"
 
-        self.showViewController(vc, sender: vc);
+        self.presentViewController(vc, animated: true, completion: nil);
     }
     
     @IBAction func didShowAllCities(sender: AnyObject) {
@@ -59,25 +62,74 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
             self.blurView = blurEffectView
             self.view.addSubview(blurEffectView)
             
-            let fixedX = Int(screenFrame.maxX - 130)
+            let fixedX = Int(screenFrame.maxX - 140)
             
-            for(var i=0; i < 5; i++){
-                let btn:UIButton = UIButton(frame: CGRect(x: fixedX, y: 50+50*i , width: 100, height: 30))
-                btn.backgroundColor = UIColor.orangeColor()
-                btn.setTitle("London", forState: .Normal)
-                btn.layer.cornerRadius = 5
+            allCitiesBtn = MoButton(frame: CGRect(x: fixedX, y: 50 , width: 120, height: 30))
+            allCitiesBtn.backgroundColor = UIColor.yellowColor()
+            allCitiesBtn.setTitle("All Cities", forState: .Normal)
+            allCitiesBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
+            allCitiesBtn.layer.cornerRadius = 15
+            allCitiesBtn.layer.borderColor = UIColor.yellowColor().CGColor
+            allCitiesBtn.layer.borderWidth = 2
+
+            allCitiesBtn.addTarget(self, action: "didSelectAllCities:", forControlEvents: .TouchUpInside)
+            blurEffectView.addSubview(allCitiesBtn)
+            
+            for(var i=0; i < UKCities?.count; i++){
+                let btn:MoButton = MoButton(frame: CGRect(x: fixedX, y: 90+40*i , width: 120, height: 30))
+                btn.backgroundColor = UIColor.clearColor()
+                btn.layer.borderColor = UIColor.yellowColor().CGColor
+                btn.layer.borderWidth = 2
+                btn.setTitle(UKCities![i], forState: .Normal)
+                btn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                btn.layer.cornerRadius = 15
+                btn.btnSeleted = false
                 blurEffectView.addSubview(btn)
+                btn.addTarget(self, action: "didToggleSelectCity:", forControlEvents: .TouchUpInside)
             }
             
             let closeBtn:UIButton = UIButton(frame: CGRect(x: 10, y: 10 , width: 30, height: 30))
             closeBtn.setTitle("X", forState: .Normal)
-            closeBtn.addTarget(self, action: "didCloseBlurbView:", forControlEvents: .TouchUpInside)
             
             blurEffectView.addSubview(closeBtn)
+            closeBtn.addTarget(self, action: "didCloseBlurbView:", forControlEvents: .TouchUpInside)
+
         }
         else {
             self.view.backgroundColor = UIColor.clearColor()
         }
+    }
+    
+    func didToggleSelectCity(sender:MoButton){
+        toggleBtn(sender)
+        if sender.btnSeleted {
+            allCitiesBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            allCitiesBtn.backgroundColor = UIColor.clearColor()
+            allCitiesBtn.btnSeleted = false
+        }
+
+    }
+    
+    func didSelectAllCities(sender:MoButton){
+        toggleBtn(sender)
+        if sender.btnSeleted {
+            //make all other buttons unseletcted
+        } else{
+            
+        }
+    }
+    
+    func toggleBtn(sender:MoButton){
+        if !sender.btnSeleted {
+            sender.setTitleColor(UIColor.blackColor(), forState: .Normal)
+            sender.backgroundColor = UIColor.yellowColor()
+            sender.btnSeleted = true
+        } else{
+            sender.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            sender.backgroundColor = UIColor.clearColor()
+            sender.btnSeleted = false
+        }
+
     }
     
     func didCloseBlurbView(sender:UIButton){

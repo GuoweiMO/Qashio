@@ -21,5 +21,4 @@ class Locations: NSObject {
         ]
     }
     
-    
 }

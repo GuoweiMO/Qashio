@@ -17,9 +17,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationItem.hidesBackButton = true
-        self.navigationItem.title = "All Events"
+//        if self.navigationController != nil {
+////            self.navigationController?.setNavigationBarHidden(false, animated: true)
+//            self.navigationItem.hidesBackButton = true
+//            self.navigationItem.title = "All Events"
+//        } else{
+//            let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44)) 
+//        }
         
         homeTableView.dataSource = self
         homeTableView.delegate = self
