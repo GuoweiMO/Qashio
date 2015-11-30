@@ -22,16 +22,14 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        scrollView.contentSize = CGSizeMake(375,1200);
         
-//        let fullScreenRect:CGRect = UIScreen.mainScreen().bounds;
-//        
-//        let scrollView:UIScrollView = UIScrollView.init(frame: fullScreenRect);
-//        scrollView.contentSize = CGSizeMake(320,1100);
-//        self.view = scrollView;
-//        self.view.backgroundColor = UIColor.yellowColor();
+        var contentRect:CGRect = CGRectZero;
+        for view in scrollView.subviews as [UIView] {
+            contentRect = CGRectUnion(contentRect, view.frame);
+        }
+        scrollView.contentSize = contentRect.size;
         
-//        scrollView = UIScrollView.init();
-        scrollView.contentSize = CGSizeMake(375,1200);
         socialMediaBtn.layer.cornerRadius = 5
         registerBtn.layer.cornerRadius = 5
     }

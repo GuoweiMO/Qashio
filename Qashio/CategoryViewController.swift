@@ -15,6 +15,9 @@ class CategoryViewController: UIViewController {
     var cateBtns = [UIButton]()
     var centerPt:CGFloat = 0
     var categoryObj = Category()
+    let SCROLLVIEW_FILLCOLOR = UIColor(red: 255.0/255, green: 230.0/255, blue: 22.0/255, alpha: 1)
+    let SUBCAT_FILLCOLOR = UIColor(red: 249/255, green: 166/255, blue: 26/255, alpha: 1)
+    let SUBCAT_BORDERCOLOR = UIColor(red: 206/255, green: 129/255, blue: 0, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,7 @@ class CategoryViewController: UIViewController {
     func createScrollView(){
         categoryScrollView.frame = UIScreen.mainScreen().bounds;
         self.view = categoryScrollView
-        self.view.backgroundColor = UIColor(red: 255.0/255, green: 230.0/255, blue: 22.0/255, alpha: 1)
+        self.view.backgroundColor = SCROLLVIEW_FILLCOLOR
         centerPt = categoryScrollView.frame.width/2
     }
     
@@ -37,7 +40,7 @@ class CategoryViewController: UIViewController {
         var i = 0
         for categoryItem in categoryObj.categoryData {
             let cateBtn = UIButton()
-            cateBtn.setImage(UIImage(named: "IT_ico") , forState: UIControlState.Normal)
+            cateBtn.setImage(UIImage(named: categoryObj.catResource[categoryItem.0]! ) , forState: UIControlState.Normal)
             cateBtns.append(cateBtn)
             cateBtn.frame = CGRect(x: Int(centerPt-50) , y: 20+140*i, width:100, height: 100)
             cateBtn.setTitle(categoryItem.0, forState: .Normal ) //String(Int(arc4random_uniform(12)))
@@ -80,7 +83,12 @@ class CategoryViewController: UIViewController {
         var subCateBtns = [UIButton]()
         let originY = parent.frame.origin.y
         var btnContents = categoryObj.categoryData[parent.currentTitle!]
-        let num = btnContents?.count
+        var num = btnContents?.count
+        var moreThan4:Bool = false
+        if num > 4 {
+            num = 4
+            moreThan4 = true
+        }
         for var i = 0; i < num!; i++ {
             print("subCate num: \(num)")
             let subBtn = MoButton()
@@ -94,12 +102,26 @@ class CategoryViewController: UIViewController {
             subBtn.btnSeleted = false
             
             subBtn.frame = CGRect(x: xPos, y: Int(originY)+25*i, width:120, height: 20)
-            subBtn.backgroundColor = UIColor.orangeColor()
+            subBtn.backgroundColor = SUBCAT_FILLCOLOR
             subBtn.layer.cornerRadius = 10
             subBtn.setTitle(btnContents!.removeFirst(), forState: UIControlState.Normal)
+            subBtn.titleLabel?.font = UIFont(name: "System", size: 13)
             
             categoryScrollView.addSubview(subBtn)
             subBtn.addTarget(self, action: "didSelectSubCategories:", forControlEvents: UIControlEvents.TouchUpInside)
+        }
+        
+        if(moreThan4){
+            let moreBtn = MoButton()
+            moreBtn.frame = CGRect(x: Int(centerPt + 130) , y: Int(originY)+75, width:20, height: 20)
+            moreBtn.parentBtn = parent.currentTitle!
+            moreBtn.backgroundColor = SUBCAT_FILLCOLOR
+            moreBtn.setTitle("•••", forState: .Normal)
+            moreBtn.layer.cornerRadius = 10
+
+            categoryScrollView.addSubview(moreBtn)
+            moreBtn.addTarget(self, action: "didshowMoreSubCategories:", forControlEvents: UIControlEvents.TouchUpInside)
+
         }
 
     }
@@ -107,15 +129,19 @@ class CategoryViewController: UIViewController {
     func didSelectSubCategories(sender: MoButton){
         if sender.btnSeleted == false{
             sender.layer.borderWidth = 3
-            sender.layer.borderColor! = UIColor.brownColor().CGColor
+            sender.layer.borderColor! = SUBCAT_BORDERCOLOR.CGColor
             sender.btnSeleted = true;
             categoryObj.addSelectedSubCategory(sender.parentBtn , subCategoryToAdd: sender.currentTitle!)
         } else{
             sender.layer.borderWidth = 0
-            sender.layer.borderColor = UIColor.orangeColor().CGColor
+            sender.layer.borderColor = SUBCAT_FILLCOLOR.CGColor
             sender.btnSeleted = false
             categoryObj.removeunSelectedSubCategory(sender.parentBtn , subCategoryToRemove: sender.currentTitle!)
         }
+    }
+    
+    func didshowMoreSubCategories(sender: MoButton){
+        //TODO
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

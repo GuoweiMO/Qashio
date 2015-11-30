@@ -10,12 +10,13 @@ import Foundation
 
 class Category {
     var categoryData: Dictionary<String, Set<String>>
+    var catResource: Dictionary<String,String>
     var selectedCategories: Dictionary<String, Set<String>>
     
     init(){
         self.categoryData = Dictionary<String, Set<String>>()
         self.categoryData = [
-            "Tech"          :   ["Hardware", "Cloud", "Network" , "Mobile", "Gaming"],
+            "IT"            :   ["Hardware", "Cloud", "Network" , "Mobile", "Gaming"],
             "Science"       :   ["Mathematics", "Physics", "Chemistry", "Biology"],
             "Finance"       :   ["Fixed-Income", "Asset Management", "Risk", "Investment"],
             "Business"      :   ["Consultancy", "Marketing", "Management"],
@@ -27,6 +28,19 @@ class Category {
             "Humanity"      :   ["Literature", "History", "Philosophy", "Politics"]
         ]
         self.selectedCategories = Dictionary<String, Set<String>>()
+        self.catResource = [
+            "IT"            :   "IT-ico",
+            "Science"       :   "science-ico",
+            "Finance"       :   "finance-ico",
+            "Business"      :   "business-ico",
+            "Design"        :   "design-ico",
+            "Art"           :   "art-ico",
+            "Music"         :   "music-ico",
+            "Sports"        :   "sports-ico",
+            "Engineering"   :   "engineering-ico",
+            "Humanity"      :   "human-ico"
+
+        ]
     }
     
     func setSelectedCategories(category:String, subCategories subCates:[String]){

@@ -26,6 +26,8 @@
 		E47459ED1C03857C006A58CF /* MoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EC1C03857C006A58CF /* MoButton.swift */; };
 		E47459EF1C070A77006A58CF /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EE1C070A77006A58CF /* APIRequest.swift */; };
 		E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F51C0715EA006A58CF /* SwiftyJSON.swift */; };
+		E47459F81C088160006A58CF /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F71C088160006A58CF /* EventCell.swift */; };
+		E49C82181C0C896D00B88E28 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		E47459EC1C03857C006A58CF /* MoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoButton.swift; sourceTree = "<group>"; };
 		E47459EE1C070A77006A58CF /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		E47459F51C0715EA006A58CF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E47459F71C088160006A58CF /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		E49C82171C0C896D00B88E28 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				E47459E61C034781006A58CF /* Category.swift */,
 				E47459EC1C03857C006A58CF /* MoButton.swift */,
 				E47459EE1C070A77006A58CF /* APIRequest.swift */,
+				E47459F71C088160006A58CF /* EventCell.swift */,
+				E49C82171C0C896D00B88E28 /* Locations.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -324,7 +330,9 @@
 				E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */,
 				E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */,
 				E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */,
+				E49C82181C0C896D00B88E28 /* Locations.swift in Sources */,
 				E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */,
+				E47459F81C088160006A58CF /* EventCell.swift in Sources */,
 				E47459ED1C03857C006A58CF /* MoButton.swift in Sources */,
 				E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */,
 				E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */,
