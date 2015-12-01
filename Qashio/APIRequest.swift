@@ -37,7 +37,7 @@ class APIRequest: NSObject{
     
     func getPopEvents(onCompletion: (JSON) -> Void){
         let baseUrl = "https://itunes.apple.com/search?term=guowei";
-//        let payLoad = ["MaxNum": 10, "timeout" : 30];
+//        let payLoad = ["term": "guowei"]
 //        let payLoad = []
         makeHTTPPostRequest(baseUrl, body: nil, onCompletion: {
             json, error in
