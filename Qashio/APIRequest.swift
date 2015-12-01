@@ -8,6 +8,7 @@
 //
 
 import Foundation
+import Alamofire
 
 typealias ServiceReponse = (JSON, NSError?) -> Void
 
@@ -35,13 +36,24 @@ class APIRequest: NSObject{
         task.resume()
     }
     
-    func getPopEvents(onCompletion: (JSON) -> Void){
-        let baseUrl = "https://itunes.apple.com/search?term=guowei";
-//        let payLoad = ["term": "guowei"]
+    func makePostRequest(baseUrl:String, params: [String:AnyObject]?){
+        Alamofire.request(.POST, baseUrl, parameters: params)
+            .responseJSON{ response in
+                let dataResponse = (try! NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.MutableContainers)) as!NSDictionary
+                print(dataResponse["results"]![1])
+        }
+    }
+    
+    
+    func getPopEvents() {
+        let baseUrl = "https://itunes.apple.com/search";
+        let payLoad = ["term": "guowei"]
 //        let payLoad = []
-        makeHTTPPostRequest(baseUrl, body: nil, onCompletion: {
-            json, error in
-            onCompletion(json as JSON)
-        })
+//        makeHTTPPostRequest(baseUrl, body: nil, onCompletion: {
+//            json, error in
+//            onCompletion(json as JSON)
+//        })
+        makePostRequest(baseUrl, params: payLoad)
+        
     }
 }

@@ -145,14 +145,7 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     func addEventsData(){
-        APIRequest.APIInstance.getPopEvents({
-            json in
-            print(json)
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                self.eventsTableView.reloadData()
-            })
-        })
+        APIRequest.APIInstance.getPopEvents()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
