@@ -128,6 +128,7 @@
                                             <outlet property="cellImage" destination="hdK-wx-s7d" id="mdt-Cr-oY5"/>
                                             <outlet property="cellNameLabel" destination="fTs-mb-j0s" id="EBr-cH-ScE"/>
                                             <outlet property="cellVenueLabel" destination="E0U-vd-oab" id="BGe-5D-Woa"/>
+                                            <segue destination="yKH-Zt-2cb" kind="show" id="7PX-aH-H8l"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -184,6 +185,40 @@
             </objects>
             <point key="canvasLocation" x="3442" y="-1548"/>
         </scene>
+        <!--Event detail-->
+        <scene sceneID="gtX-ga-YJL">
+            <objects>
+                <viewController title="Event detail" hidesBottomBarWhenPushed="YES" id="yKH-Zt-2cb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dUa-lg-989"/>
+                        <viewControllerLayoutGuide type="bottom" id="M6h-dR-lQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gep-4D-ewT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="851"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJ6-R8-44a">
+                                <rect key="frame" x="0.0" y="20" width="600" height="831"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dJ6-R8-44a" secondAttribute="trailing" id="6g2-wn-92Z"/>
+                            <constraint firstItem="dJ6-R8-44a" firstAttribute="bottom" secondItem="M6h-dR-lQ4" secondAttribute="top" id="FXe-fS-RFt"/>
+                            <constraint firstItem="dJ6-R8-44a" firstAttribute="top" secondItem="dUa-lg-989" secondAttribute="bottom" id="SPO-VR-kp6"/>
+                            <constraint firstItem="dJ6-R8-44a" firstAttribute="leading" secondItem="Gep-4D-ewT" secondAttribute="leading" id="yPF-ff-0BI"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jA5-eP-5EC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4184" y="-1548"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -228,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4178" y="-1192"/>
+            <point key="canvasLocation" x="3374" y="-852"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="OdP-NJ-Qmb">
@@ -1152,13 +1187,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2L-Wg-ked" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="-500"/>
+            <point key="canvasLocation" x="2618" y="-858"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WPF-Ht-rWw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L8q-hq-yAs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" badgeValue="10+" systemItem="featured" id="yBv-BU-8QA"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="yBv-BU-8QA"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
