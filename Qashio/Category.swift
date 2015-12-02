@@ -43,11 +43,6 @@ class Category {
         ]
     }
     
-    func setSelectedCategories(category:String, subCategories subCates:[String]){
-//        let selectedCate = [category : subCates]
-//        self.selectedCategories.append(selectedCate)
-    }
-    
     func addSelectedSubCategory(mainCate:String, subCategoryToAdd subCate:String){
         if self.selectedCategories[mainCate] == nil {
             self.selectedCategories[mainCate] = Set<String>()

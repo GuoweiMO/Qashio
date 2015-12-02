@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		32F6BE4F5442BB3F1472046A /* Pods_Qashio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */; };
 		E41B90651C0DDDD30082658C /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90641C0DDDD30082658C /* EventDetailViewController.swift */; };
+		E41B90671C0F39BA0082658C /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90661C0F39BA0082658C /* CategoryTests.swift */; };
+		E41B90691C0F436C0082658C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
 		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; };
 		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; };
 		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; };
@@ -22,13 +24,14 @@
 		E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429CDAE1BBFD8000084FB5D /* Main.storyboard */; };
 		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; };
 		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
-		E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453945B1BBFD38A001040EC /* QashioTests.swift */; };
 		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
 		E47459E71C034781006A58CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
 		E47459ED1C03857C006A58CF /* MoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EC1C03857C006A58CF /* MoButton.swift */; };
 		E47459EF1C070A77006A58CF /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EE1C070A77006A58CF /* APIRequest.swift */; };
 		E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F51C0715EA006A58CF /* SwiftyJSON.swift */; };
 		E47459F81C088160006A58CF /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F71C088160006A58CF /* EventCell.swift */; };
+		E48466981C0F5AF900FB749C /* LocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48466971C0F5AF900FB749C /* LocationsTests.swift */; };
+		E48466991C0F5B0F00FB749C /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 		E49C82181C0C896D00B88E28 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,7 @@
 		0737C5D7094080679E7238FD /* Pods-Qashio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qashio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qashio/Pods-Qashio.debug.xcconfig"; sourceTree = "<group>"; };
 		B4D83DBE709ABF332D1F5066 /* Pods-Qashio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qashio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qashio/Pods-Qashio.release.xcconfig"; sourceTree = "<group>"; };
 		E41B90641C0DDDD30082658C /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		E41B90661C0F39BA0082658C /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
 		E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsSumViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +73,6 @@
 		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394571BBFD38A001040EC /* QashioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E453945B1BBFD38A001040EC /* QashioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioTests.swift; sourceTree = "<group>"; };
 		E453945D1BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394621BBFD38A001040EC /* QashioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45394661BBFD38A001040EC /* QashioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioUITests.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		E47459EE1C070A77006A58CF /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		E47459F51C0715EA006A58CF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E47459F71C088160006A58CF /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		E48466971C0F5AF900FB749C /* LocationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTests.swift; sourceTree = "<group>"; };
 		E49C82171C0C896D00B88E28 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qashio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,8 +189,9 @@
 		E453945A1BBFD38A001040EC /* QashioTests */ = {
 			isa = PBXGroup;
 			children = (
-				E453945B1BBFD38A001040EC /* QashioTests.swift */,
+				E48466971C0F5AF900FB749C /* LocationsTests.swift */,
 				E453945D1BBFD38A001040EC /* Info.plist */,
+				E41B90661C0F39BA0082658C /* CategoryTests.swift */,
 			);
 			path = QashioTests;
 			sourceTree = "<group>";
@@ -426,7 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */,
+				E41B90671C0F39BA0082658C /* CategoryTests.swift in Sources */,
+				E48466981C0F5AF900FB749C /* LocationsTests.swift in Sources */,
+				E48466991C0F5B0F00FB749C /* Locations.swift in Sources */,
+				E41B90691C0F436C0082658C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = Qashio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Qashio;
