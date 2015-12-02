@@ -8,20 +8,51 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
-    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var homeTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
     
-    func getCurrentMonth() -> String{
-//        let date = NSDate()
-//        let calendar = NSCalendar.currentCalendar()
-//        let components = calendar.components(NSCalendarUnit.CalendarUnitMonth, fromDate: date)
-        return "1"; //swift is nice
+    override func viewWillAppear(animated: Bool) {
+//        if self.navigationController != nil {
+////            self.navigationController?.setNavigationBarHidden(false, animated: true)
+//            self.navigationItem.hidesBackButton = true
+//            self.navigationItem.title = "All Events"
+//        } else{
+//            let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44)) 
+//        }
+        
+        homeTableView.dataSource = self
+        homeTableView.delegate = self
+    }
+
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1 //hard code, only display top 10
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //        return self.events.count
+        return 10
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("home_event_cell") as! EventCell?
+        
+        if cell == nil {
+            cell = EventCell(style: UITableViewCellStyle.Default, reuseIdentifier: "home_event_cell")
+        }
+        
+        cell?.cellImage.image = UIImage(named: "sampe_event_bg")
+        cell?.cellNameLabel.text = "Apple"
+        cell?.cellVenueLabel.text = "1 Infinite Loop, Cupertino, CA 95014"
+        cell?.cellDateLabel.text = String(indexPath.row+1)
+        
+        return cell!
     }
 
     override func didReceiveMemoryWarning() {

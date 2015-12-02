@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F6BE4F5442BB3F1472046A /* Pods_Qashio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */; };
+		E41B90651C0DDDD30082658C /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90641C0DDDD30082658C /* EventDetailViewController.swift */; };
+		E41B90671C0F39BA0082658C /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90661C0F39BA0082658C /* CategoryTests.swift */; };
+		E41B90691C0F436C0082658C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
 		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; };
 		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; };
 		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; };
@@ -20,10 +24,15 @@
 		E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429CDAE1BBFD8000084FB5D /* Main.storyboard */; };
 		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; };
 		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
-		E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453945B1BBFD38A001040EC /* QashioTests.swift */; };
 		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
 		E47459E71C034781006A58CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
 		E47459ED1C03857C006A58CF /* MoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EC1C03857C006A58CF /* MoButton.swift */; };
+		E47459EF1C070A77006A58CF /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EE1C070A77006A58CF /* APIRequest.swift */; };
+		E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F51C0715EA006A58CF /* SwiftyJSON.swift */; };
+		E47459F81C088160006A58CF /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F71C088160006A58CF /* EventCell.swift */; };
+		E48466981C0F5AF900FB749C /* LocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48466971C0F5AF900FB749C /* LocationsTests.swift */; };
+		E48466991C0F5B0F00FB749C /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
+		E49C82181C0C896D00B88E28 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0737C5D7094080679E7238FD /* Pods-Qashio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qashio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qashio/Pods-Qashio.debug.xcconfig"; sourceTree = "<group>"; };
+		B4D83DBE709ABF332D1F5066 /* Pods-Qashio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qashio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qashio/Pods-Qashio.release.xcconfig"; sourceTree = "<group>"; };
+		E41B90641C0DDDD30082658C /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		E41B90661C0F39BA0082658C /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
 		E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsSumViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +73,6 @@
 		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394571BBFD38A001040EC /* QashioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E453945B1BBFD38A001040EC /* QashioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioTests.swift; sourceTree = "<group>"; };
 		E453945D1BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394621BBFD38A001040EC /* QashioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45394661BBFD38A001040EC /* QashioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QashioUITests.swift; sourceTree = "<group>"; };
@@ -68,6 +80,12 @@
 		E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Qashio-Bridging-Header.h"; sourceTree = "<group>"; };
 		E47459E61C034781006A58CF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E47459EC1C03857C006A58CF /* MoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoButton.swift; sourceTree = "<group>"; };
+		E47459EE1C070A77006A58CF /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		E47459F51C0715EA006A58CF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E47459F71C088160006A58CF /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		E48466971C0F5AF900FB749C /* LocationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTests.swift; sourceTree = "<group>"; };
+		E49C82171C0C896D00B88E28 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qashio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F6BE4F5442BB3F1472046A /* Pods_Qashio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823FB53597C02FFA4AD50C9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E8E5DAAF6FA6E379A1F04B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0737C5D7094080679E7238FD /* Pods-Qashio.debug.xcconfig */,
+				B4D83DBE709ABF332D1F5066 /* Pods-Qashio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E429CD991BBFD79B0084FB5D /* controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +143,7 @@
 				E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */,
 				E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */,
 				E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */,
+				E41B90641C0DDDD30082658C /* EventDetailViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -118,6 +155,8 @@
 				E453945A1BBFD38A001040EC /* QashioTests */,
 				E45394651BBFD38A001040EC /* QashioUITests */,
 				E45394421BBFD38A001040EC /* Products */,
+				83E8E5DAAF6FA6E379A1F04B /* Pods */,
+				823FB53597C02FFA4AD50C9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +173,7 @@
 		E45394431BBFD38A001040EC /* Qashio */ = {
 			isa = PBXGroup;
 			children = (
+				E47459F01C070E1E006A58CF /* Libs */,
 				E46EA0BE1BF2A4890057BE65 /* models */,
 				E429CD991BBFD79B0084FB5D /* controllers */,
 				E453944D1BBFD38A001040EC /* Assets.xcassets */,
@@ -149,8 +189,9 @@
 		E453945A1BBFD38A001040EC /* QashioTests */ = {
 			isa = PBXGroup;
 			children = (
-				E453945B1BBFD38A001040EC /* QashioTests.swift */,
+				E48466971C0F5AF900FB749C /* LocationsTests.swift */,
 				E453945D1BBFD38A001040EC /* Info.plist */,
+				E41B90661C0F39BA0082658C /* CategoryTests.swift */,
 			);
 			path = QashioTests;
 			sourceTree = "<group>";
@@ -169,8 +210,19 @@
 			children = (
 				E47459E61C034781006A58CF /* Category.swift */,
 				E47459EC1C03857C006A58CF /* MoButton.swift */,
+				E47459EE1C070A77006A58CF /* APIRequest.swift */,
+				E47459F71C088160006A58CF /* EventCell.swift */,
+				E49C82171C0C896D00B88E28 /* Locations.swift */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		E47459F01C070E1E006A58CF /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E47459F51C0715EA006A58CF /* SwiftyJSON.swift */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E453946B1BBFD38A001040EC /* Build configuration list for PBXNativeTarget "Qashio" */;
 			buildPhases = (
+				91DFE42033630F0D71D8C59E /* Check Pods Manifest.lock */,
 				E453943D1BBFD38A001040EC /* Sources */,
 				E453943E1BBFD38A001040EC /* Frameworks */,
 				E453943F1BBFD38A001040EC /* Resources */,
+				5EDE025AFB088500598E6AB7 /* Embed Pods Frameworks */,
+				97C4AC189826225BB8F28E2D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +354,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EDE025AFB088500598E6AB7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Qashio/Pods-Qashio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DFE42033630F0D71D8C59E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97C4AC189826225BB8F28E2D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Qashio/Pods-Qashio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E453943D1BBFD38A001040EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,15 +409,20 @@
 			files = (
 				E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */,
 				E429CDA91BBFD7C50084FB5D /* LoginViewController.swift in Sources */,
+				E47459EF1C070A77006A58CF /* APIRequest.swift in Sources */,
 				E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */,
 				E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */,
+				E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */,
+				E49C82181C0C896D00B88E28 /* Locations.swift in Sources */,
 				E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */,
+				E47459F81C088160006A58CF /* EventCell.swift in Sources */,
 				E47459ED1C03857C006A58CF /* MoButton.swift in Sources */,
 				E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */,
 				E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */,
 				E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */,
 				E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */,
 				E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */,
+				E41B90651C0DDDD30082658C /* EventDetailViewController.swift in Sources */,
 				E47459E71C034781006A58CF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E453945C1BBFD38A001040EC /* QashioTests.swift in Sources */,
+				E41B90671C0F39BA0082658C /* CategoryTests.swift in Sources */,
+				E48466981C0F5AF900FB749C /* LocationsTests.swift in Sources */,
+				E48466991C0F5B0F00FB749C /* Locations.swift in Sources */,
+				E41B90691C0F436C0082658C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +545,11 @@
 		};
 		E453946C1BBFD38A001040EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0737C5D7094080679E7238FD /* Pods-Qashio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = Qashio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Qashio;
@@ -448,6 +561,7 @@
 		};
 		E453946D1BBFD38A001040EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D83DBE709ABF332D1F5066 /* Pods-Qashio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
