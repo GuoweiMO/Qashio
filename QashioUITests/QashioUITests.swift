@@ -31,6 +31,14 @@ class QashioUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.buttons["landing_new"].tap()
+        app.textFields["email"].tap()
+        app.textFields["email"].typeText("guowei")
+        app.textFields["password"].tap()
+        app.textFields["password"].typeText("XXX")
+        
+        XCTAssertTrue(app.buttons["Sign Up"].exists)
     }
     
 }

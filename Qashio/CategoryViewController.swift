@@ -116,7 +116,7 @@ class CategoryViewController: UIViewController {
             moreBtn.frame = CGRect(x: Int(centerPt + 130) , y: Int(originY)+75, width:20, height: 20)
             moreBtn.parentBtn = parent.currentTitle!
             moreBtn.backgroundColor = SUBCAT_FILLCOLOR
-            moreBtn.setTitle("•••", forState: .Normal)
+            moreBtn.setTitle("+", forState: .Normal)
             moreBtn.layer.cornerRadius = 10
 
             categoryScrollView.addSubview(moreBtn)

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     
 //    var scrollView:UIScrollView!
     
@@ -19,6 +19,8 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var socialMediaBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
+    
+    var baseScrollHeight:CGFloat?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,11 +34,39 @@ class RegisterViewController: UIViewController {
         
         socialMediaBtn.layer.cornerRadius = 5
         registerBtn.layer.cornerRadius = 5
+        emailField.delegate = self
+        passwordField.delegate = self
+        
+        baseScrollHeight = scrollView.contentSize.height
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardDidShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardDidHide:", name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    func keyboardDidShow(notification: NSNotification){
+        scrollView.contentSize.height = baseScrollHeight!
+        let keyboardHeight:CGFloat = notification.userInfo![UIKeyboardFrameEndUserInfoKey]!.CGRectValue.height
+        print("keyboard shows",keyboardHeight)
+        scrollView.contentSize.height += keyboardHeight
+    }
+    
+    func keyboardDidHide(notification: NSNotification){
+        scrollView.contentSize.height = baseScrollHeight!
+        let keyboardHeight:CGFloat = notification.userInfo![UIKeyboardFrameEndUserInfoKey]!.CGRectValue.height
+        print("keyboard hides",keyboardHeight)
+        scrollView.contentSize.height -= keyboardHeight
     }
     
     @IBAction func uploadSelfImage(sender: AnyObject) {
         
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        scrollView.contentSize.height = baseScrollHeight!
+        return true
+    }
+    
     
     @IBAction func processUserSignup(sender: AnyObject) {
         let userEmail:String? = emailField.text
