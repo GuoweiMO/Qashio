@@ -22,7 +22,6 @@
 		E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */; };
 		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; };
 		E434A3761C10FD63006404D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E434A3751C10FD63006404D8 /* Main.storyboard */; };
-		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
 		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
 		E47459E71C034781006A58CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
 		E47459ED1C03857C006A58CF /* MoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459EC1C03857C006A58CF /* MoButton.swift */; };
@@ -33,6 +32,7 @@
 		E48466991C0F5B0F00FB749C /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 		E48466A01C0F64B200FB749C /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90661C0F39BA0082658C /* CategoryTests.swift */; };
 		E49C82181C0C896D00B88E28 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
+		E4F845CC1C1201D80024F7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F845CB1C1201D80024F7F3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,6 @@
 		E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		E434A3751C10FD63006404D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E45394411BBFD38A001040EC /* Qashio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qashio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45394571BBFD38A001040EC /* QashioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QashioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E453945D1BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		E47459F71C088160006A58CF /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		E48466971C0F5AF900FB749C /* LocationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTests.swift; sourceTree = "<group>"; };
 		E49C82171C0C896D00B88E28 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		E4F845CB1C1201D80024F7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qashio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,12 +176,12 @@
 				E47459F01C070E1E006A58CF /* Libs */,
 				E46EA0BE1BF2A4890057BE65 /* models */,
 				E429CD991BBFD79B0084FB5D /* controllers */,
-				E453944D1BBFD38A001040EC /* Assets.xcassets */,
 				E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */,
 				E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */,
 				E45394521BBFD38A001040EC /* Info.plist */,
 				E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */,
 				E434A3751C10FD63006404D8 /* Main.storyboard */,
+				E4F845CB1C1201D80024F7F3 /* Assets.xcassets */,
 			);
 			path = Qashio;
 			sourceTree = "<group>";
@@ -333,8 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E434A3761C10FD63006404D8 /* Main.storyboard in Resources */,
+				E4F845CC1C1201D80024F7F3 /* Assets.xcassets in Resources */,
 				E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */,
-				E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

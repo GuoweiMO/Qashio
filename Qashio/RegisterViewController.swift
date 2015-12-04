@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RegisterViewController: UIViewController, UITextFieldDelegate {
+class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
 //    var scrollView:UIScrollView!
     
@@ -19,8 +19,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var socialMediaBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var selfImageUploadBtn: UIButton!
+    @IBOutlet weak var selfImageView: UIImageView!
+    @IBOutlet weak var removeImageBtn: UIButton!
     
     var baseScrollHeight:CGFloat?
+    var originalImage:UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,6 +45,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardDidShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardDidHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        originalImage = selfImageView.image
     }
     
     func keyboardDidShow(notification: NSNotification){
@@ -57,8 +63,30 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         scrollView.contentSize.height -= keyboardHeight
     }
     
+    /********************************
+        Upload Image from Library
+     ************************************/
     @IBAction func uploadSelfImage(sender: AnyObject) {
-        
+        let imagePicker:UIImagePickerController = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .PhotoLibrary
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        selfImageView.contentMode = .ScaleToFill
+        selfImageView.image = chosenImage
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func removeUploadedImage(sender: AnyObject) {
+        selfImageView.image = originalImage
+
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

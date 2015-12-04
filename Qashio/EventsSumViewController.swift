@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class EventSumViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class EventSumViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,UIPopoverPresentationControllerDelegate{
     
     var selecedCategories:String = ""
 
@@ -34,20 +34,32 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
         eventsTableView.dataSource = self
         eventsTableView.delegate = self
         addEventsData()
-        
     }
+    
     @IBAction func willGenerateHomeEvents(sender: AnyObject) {
         print("you click see all button");
         
         //after a few processing
-        
         let vc:UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainNav")
 //        vc.navigationItem.hidesBackButton = true
 //        vc.navigationController?.setNavigationBarHidden(true, animated: true)
 //        vc.navigationItem.title = "All Events"
-
         self.presentViewController(vc, animated: true, completion: nil);
     }
+    
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "pickCitiesSegue" {
+//            let popoverViewController = segue.destinationViewController
+//            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.Popover
+//            popoverViewController.preferredContentSize = CGSize(width: 150, height: 400)
+//            popoverViewController.popoverPresentationController!.delegate = self
+//        }
+//    }
+//    
+//    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+//        return UIModalPresentationStyle.None
+//    }
     
     @IBAction func didShowAllCities(sender: AnyObject) {
         if !UIAccessibilityIsReduceTransparencyEnabled() {
@@ -62,6 +74,14 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
             self.blurView = blurEffectView
             self.view.addSubview(blurEffectView)
             
+            UIView.transitionWithView(
+                self.view,
+                duration: 1,
+                options: UIViewAnimationOptions.TransitionNone,
+                animations: {
+                    self.view.addSubview(blurEffectView)
+                }, completion: nil)
+            
             let fixedX = Int(screenFrame.maxX - 140)
             
             allCitiesBtn = MoButton(frame: CGRect(x: fixedX, y: 50 , width: 120, height: 30))
@@ -73,6 +93,8 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
             allCitiesBtn.layer.borderWidth = 2
 
             allCitiesBtn.addTarget(self, action: "didSelectAllCities:", forControlEvents: .TouchUpInside)
+            
+            
             blurEffectView.addSubview(allCitiesBtn)
             
             for(var i=0; i < UKCities?.count; i++){

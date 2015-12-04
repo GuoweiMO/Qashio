@@ -38,7 +38,9 @@ class QashioUITests: XCTestCase {
         app.textFields["password"].tap()
         app.textFields["password"].typeText("XXX")
         
-        XCTAssertTrue(app.buttons["Sign Up"].exists)
+        app.buttons["signup"].tap()
+        
+//        XCTAssertTrue(app.buttons["Sign Up"].exists)
     }
     
 }
