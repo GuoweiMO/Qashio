@@ -20,8 +20,8 @@
 		E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */; };
 		E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */; };
 		E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */; };
-		E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429CDAE1BBFD8000084FB5D /* Main.storyboard */; };
 		E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */; };
+		E434A3761C10FD63006404D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E434A3751C10FD63006404D8 /* Main.storyboard */; };
 		E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E453944D1BBFD38A001040EC /* Assets.xcassets */; };
 		E45394671BBFD38A001040EC /* QashioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45394661BBFD38A001040EC /* QashioUITests.swift */; };
 		E47459E71C034781006A58CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
@@ -67,8 +67,8 @@
 		E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedListViewController.swift; sourceTree = "<group>"; };
 		E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		E429CDAE1BBFD8000084FB5D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		E434A3751C10FD63006404D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E45394411BBFD38A001040EC /* Qashio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qashio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E453944D1BBFD38A001040EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45394521BBFD38A001040EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,10 +178,10 @@
 				E429CD991BBFD79B0084FB5D /* controllers */,
 				E453944D1BBFD38A001040EC /* Assets.xcassets */,
 				E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */,
-				E429CDAE1BBFD8000084FB5D /* Main.storyboard */,
 				E429CDB01BBFD81C0084FB5D /* LaunchScreen.xib */,
 				E45394521BBFD38A001040EC /* Info.plist */,
 				E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */,
+				E434A3751C10FD63006404D8 /* Main.storyboard */,
 			);
 			path = Qashio;
 			sourceTree = "<group>";
@@ -332,8 +332,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E434A3761C10FD63006404D8 /* Main.storyboard in Resources */,
 				E429CDB11BBFD81C0084FB5D /* LaunchScreen.xib in Resources */,
-				E429CDAF1BBFD8000084FB5D /* Main.storyboard in Resources */,
 				E453944E1BBFD38A001040EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
