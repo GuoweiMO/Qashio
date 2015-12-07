@@ -90,25 +90,25 @@ class LoginViewController: UIViewController {
         }
 
         var result = Dictionary<String, AnyObject>()
-        
-        let temV = arc4random_uniform(100)%3
-        print(temV)
-        if  temV == 0 {
-            result = [
-                "success"   : false,
-                "msg"       : "user does not exist"
-            ]
-        } else if  temV == 1{
-            result = [
-                "success"   : false,
-                "msg"       : "the password is not correct for the user"
-            ]
-        }else{
-            result = [
-                "success"   : true,
-                "msg"       : ""
-            ]
-        }
+//
+//        let temV = arc4random_uniform(100)%3
+//        print(temV)
+//        if  temV == 0 {
+//            result = [
+//                "success"   : false,
+//                "msg"       : "user does not exist"
+//            ]
+//        } else if  temV == 1{
+//            result = [
+//                "success"   : false,
+//                "msg"       : "the password is not correct for the user"
+//            ]
+//        }else{
+//            result = [
+//                "success"   : true,
+//                "msg"       : ""
+//            ]
+//        }
         
         if username.isEmpty && password.isEmpty{
         
