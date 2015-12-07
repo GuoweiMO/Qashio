@@ -14,6 +14,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let panRecogniser = UIPanGestureRecognizer(target: self, action: "handleOnPan:")
+        self.view.addGestureRecognizer(panRecogniser)
+        
+        let refreshControl = UIRefreshControl()
+        self.homeTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: "refreshAllEvents:", forControlEvents: .ValueChanged)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -28,15 +35,38 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         homeTableView.dataSource = self
         homeTableView.delegate = self
     }
-
+    
+    func refreshAllEvents(sender: UIRefreshControl){
+        //TODO reload the table data
+        sender.endRefreshing()
+    }
+    func handleOnPan(gesture: UIGestureRecognizer){
+        print("You dragged the table")
+    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1 //hard code, only display top 10
+        return 2 //hard code, only display top 10
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView:UIView = UIView()
+        let monthBackGroundView:UIImageView = UIImageView(image: UIImage(named: "month_oval"))
+        monthBackGroundView.frame = CGRect(x: 0, y: 10,width: 70, height: 60)
+        let monthLabel:UILabel = UILabel()
+        monthLabel.text = "DEC"
+        monthLabel.frame = CGRect(x: 23, y: 1, width: 58, height: 58)
+        monthBackGroundView.addSubview(monthLabel)
+        headerView.addSubview(monthBackGroundView)
+        
+        return headerView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //        return self.events.count
-        return 10
+        return 6
     }
     
     

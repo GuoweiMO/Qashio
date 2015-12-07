@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
     
@@ -75,6 +76,19 @@ class LoginViewController: UIViewController {
     
     func checkUserInfoWithUserName(username: String, userPassword password: String) -> Dictionary<String, AnyObject>?{
         
+        let params = [
+            "username"  : username,
+            "password"  : password,
+            "type"      : "check"
+        ]
+        Alamofire.request(.POST, "http://198.100.146.69:8080/QashioAPI-1.0/verify", parameters: params)
+            .responseJSON{ response in
+//                let dataResponse = (try! NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
+                print(response.result)
+                print(response.request)
+                print(response.data)
+        }
+
         var result = Dictionary<String, AnyObject>()
         
         let temV = arc4random_uniform(100)%3
