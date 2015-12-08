@@ -32,6 +32,7 @@
 		E48466991C0F5B0F00FB749C /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 		E48466A01C0F64B200FB749C /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90661C0F39BA0082658C /* CategoryTests.swift */; };
 		E49C82181C0C896D00B88E28 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
+		E4D9E0971C1721D900CF9975 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D9E0961C1721D900CF9975 /* APIController.swift */; };
 		E4F845CC1C1201D80024F7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F845CB1C1201D80024F7F3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		E47459F71C088160006A58CF /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		E48466971C0F5AF900FB749C /* LocationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTests.swift; sourceTree = "<group>"; };
 		E49C82171C0C896D00B88E28 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		E4D9E0961C1721D900CF9975 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		E4F845CB1C1201D80024F7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qashio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 				E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */,
 				E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */,
 				E41B90641C0DDDD30082658C /* EventDetailViewController.swift */,
+				E4D9E0961C1721D900CF9975 /* APIController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */,
 				E49C82181C0C896D00B88E28 /* Locations.swift in Sources */,
 				E429CDAC1BBFD7C50084FB5D /* SavedListViewController.swift in Sources */,
+				E4D9E0971C1721D900CF9975 /* APIController.swift in Sources */,
 				E47459F81C088160006A58CF /* EventCell.swift in Sources */,
 				E47459ED1C03857C006A58CF /* MoButton.swift in Sources */,
 				E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */,
