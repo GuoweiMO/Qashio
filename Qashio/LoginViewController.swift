@@ -83,32 +83,33 @@ class LoginViewController: UIViewController {
         ]
         Alamofire.request(.POST, "http://198.100.146.69:8080/QashioAPI-1.0/verify", parameters: params)
             .responseJSON{ response in
-//                let dataResponse = (try! NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
                 print(response.result)
                 print(response.request)
-                print(response.data)
+                let dataResponse = (try! NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
+
+                print(dataResponse)
         }
 
         var result = Dictionary<String, AnyObject>()
-//
-//        let temV = arc4random_uniform(100)%3
-//        print(temV)
-//        if  temV == 0 {
-//            result = [
-//                "success"   : false,
-//                "msg"       : "user does not exist"
-//            ]
-//        } else if  temV == 1{
-//            result = [
-//                "success"   : false,
-//                "msg"       : "the password is not correct for the user"
-//            ]
-//        }else{
-//            result = [
-//                "success"   : true,
-//                "msg"       : ""
-//            ]
-//        }
+
+        let temV = arc4random_uniform(100)%3
+        print(temV)
+        if  temV == 0 {
+            result = [
+                "success"   : false,
+                "msg"       : "user does not exist"
+            ]
+        } else if  temV == 1{
+            result = [
+                "success"   : false,
+                "msg"       : "the password is not correct for the user"
+            ]
+        }else{
+            result = [
+                "success"   : true,
+                "msg"       : ""
+            ]
+        }
         
         if username.isEmpty && password.isEmpty{
         
