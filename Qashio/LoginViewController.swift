@@ -61,7 +61,7 @@ class LoginViewController: UIViewController, APIControllerProtocol {
     func renderLoginResult(){
         var errorMsg = ""
         if self.loginResults != nil {
-            if self.loginResults!["success"]! as! NSNumber == 1 {
+            if (self.loginResults!["success"]! as! NSNumber) == true {
                 //check against the data in db
                 localData!.setValue(userName.text!, forKey: "USER_NAME");
                 localData!.setValue(passWord.text!, forKey: "PASSWORD");

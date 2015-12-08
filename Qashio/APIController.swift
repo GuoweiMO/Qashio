@@ -58,8 +58,9 @@ class APIController {
         httpPost(path, parameters: params)
     }
     
-    func lookupAlbum(collectionId: Int) {
-        
+    func registerNewUser(params: Dictionary<String,AnyObject>) {
+        let path = "http://198.100.146.69:8080/QashioAPI-1.0/verify"
+        httpPost(path, parameters: params)
     }
     
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, APIControllerProtocol {
     
 //    var scrollView:UIScrollView!
     
@@ -25,6 +25,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
     var baseScrollHeight:CGFloat?
     var originalImage:UIImage?
+    var API : APIController?
+    let localData = NSUserDefaults.standardUserDefaults()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -47,6 +50,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardDidHide:", name: UIKeyboardWillHideNotification, object: nil)
         
         originalImage = selfImageView.image
+        
+        API = APIController(delegate: self)
     }
     
     func keyboardDidShow(notification: NSNotification){
@@ -99,17 +104,18 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     @IBAction func processUserSignup(sender: AnyObject) {
         let userEmail:String? = emailField.text
         let userPassword:String? = passwordField.text
-        let localData = NSUserDefaults.standardUserDefaults()
 
         if userEmail != nil && !userEmail!.isEmpty && userPassword != nil && !userPassword!.isEmpty {
-            localData.setValue(userEmail, forKey: "USER_NAME");
-            localData.setValue(userPassword, forKey: "PASSWORD");
-            let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("mainCtrl")
-            self.showViewController(vc as! UIViewController, sender: vc);
-        } else{
-            let alert:UIAlertController = UIAlertController(title: "ERROR" , message: "You have not filled all the required information", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            let params = [
+                "username"  :  userEmail!,
+                "password"  :  userPassword!,
+                "type"      :  "add"
+                ]
+                API?.registerNewUser(params)
+            
+            } else{
+                presentErrorAlert("You have not filled all the required information")
+            
         }
     }
     
@@ -118,5 +124,25 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func didReceiveAPIResults(results: NSDictionary) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+
+        if (results["success"]! as! NSNumber) == true {
+            localData.setValue(emailField.text, forKey: "USER_NAME");
+            localData.setValue(passwordField.text, forKey: "PASSWORD");
+            let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("mainCtrl")
+            self.showViewController(vc as! UIViewController, sender: vc);
+        }else{
+            presentErrorAlert(results["msg"]! as? String)
+        }
+
+    }
+    
+    func presentErrorAlert(msg:String?){
+        let alert:UIAlertController = UIAlertController(title: "ERROR" , message: msg!, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
 }
