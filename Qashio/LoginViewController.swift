@@ -63,8 +63,8 @@ class LoginViewController: UIViewController, APIControllerProtocol {
         if self.loginResults != nil {
             if (self.loginResults!["success"]! as! NSNumber) == true {
                 //check against the data in db
-                localData!.setValue(userName.text!, forKey: "USER_NAME");
-                localData!.setValue(passWord.text!, forKey: "PASSWORD");
+                localData!.setValue(userName.text!, forKey: "USER_NAME")
+                localData!.setValue(passWord.text!, forKey: "PASSWORD")
                 
                 let vc:UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainNav")
                 self.showViewController(vc, sender: vc);
@@ -73,37 +73,13 @@ class LoginViewController: UIViewController, APIControllerProtocol {
                 if errorMsg.isEmpty {
                     errorMsg = "Unable to Log in."
                 }
-                
-                //            let alertController = UIAlertController(title: "Email?", message: "Please input your email:", preferredStyle: .Alert)
-                //
-                //            let confirmAction = UIAlertAction(title: "Confirm", style: .Default) { (_) in
-                //                if let field:UITextField = alertController.textFields![0] {
-                //                    // store your data
-                //                    NSUserDefaults.standardUserDefaults().setObject(field.text, forKey: "userEmail")
-                //                    NSUserDefaults.standardUserDefaults().synchronize()
-                //                }
-                //            }
-                //
-                //            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (_) in }
-                //
-                //            //add the input field
-                //            alertController.addTextFieldWithConfigurationHandler { (textField) in
-                //                textField.placeholder = "Email"
-                //            }
-                //
-                //            alertController.addAction(confirmAction)
-                //            alertController.addAction(cancelAction)
-                //            
-                //            self.presentViewController(alertController, animated: true, completion: nil)
             }
         } else {
             errorMsg = "Network Error. Please try again."
         }
         
         if !errorMsg.isEmpty {
-            let alert:UIAlertController = UIAlertController(title: "ERROR" , message: errorMsg, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            AlertController.presentErrorAlert(self,msg: errorMsg)
         }
  
     }

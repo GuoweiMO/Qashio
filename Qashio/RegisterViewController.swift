@@ -105,7 +105,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         let userEmail:String? = emailField.text
         let userPassword:String? = passwordField.text
 
-        if userEmail != nil && !userEmail!.isEmpty && userPassword != nil && !userPassword!.isEmpty {
+        if !userEmail!.isEmpty && !userPassword!.isEmpty {
             let params = [
                 "username"  :  userEmail!,
                 "password"  :  userPassword!,
@@ -114,7 +114,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
                 API?.registerNewUser(params)
             
             } else{
-                presentErrorAlert("You have not filled all the required information")
+            AlertController.presentErrorAlert(self, msg: "You have not filled all the required information")
             
         }
     }
@@ -134,15 +134,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
             let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("mainCtrl")
             self.showViewController(vc as! UIViewController, sender: vc);
         }else{
-            presentErrorAlert(results["msg"]! as? String)
+            AlertController.presentErrorAlert(self, msg: results["msg"]! as? String)
         }
 
-    }
-    
-    func presentErrorAlert(msg:String?){
-        let alert:UIAlertController = UIAlertController(title: "ERROR" , message: msg!, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
     }
     
 }
