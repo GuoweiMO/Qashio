@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		32F6BE4F5442BB3F1472046A /* Pods_Qashio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */; };
 		E41B90651C0DDDD30082658C /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90641C0DDDD30082658C /* EventDetailViewController.swift */; };
-		E41B90691C0F436C0082658C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459E61C034781006A58CF /* Category.swift */; };
 		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; };
 		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; };
 		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; };
@@ -29,7 +28,6 @@
 		E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F51C0715EA006A58CF /* SwiftyJSON.swift */; };
 		E47459F81C088160006A58CF /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47459F71C088160006A58CF /* EventCell.swift */; };
 		E48466981C0F5AF900FB749C /* LocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48466971C0F5AF900FB749C /* LocationsTests.swift */; };
-		E48466991C0F5B0F00FB749C /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 		E48466A01C0F64B200FB749C /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90661C0F39BA0082658C /* CategoryTests.swift */; };
 		E49C82181C0C896D00B88E28 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C82171C0C896D00B88E28 /* Locations.swift */; };
 		E4D9E0971C1721D900CF9975 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D9E0961C1721D900CF9975 /* APIController.swift */; };
@@ -440,8 +438,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48466981C0F5AF900FB749C /* LocationsTests.swift in Sources */,
-				E48466991C0F5B0F00FB749C /* Locations.swift in Sources */,
-				E41B90691C0F436C0082658C /* Category.swift in Sources */,
 				E48466A01C0F64B200FB749C /* CategoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

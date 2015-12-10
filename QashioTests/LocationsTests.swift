@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Qashio
 
 class LocationsTests: XCTestCase {
     override func setUp() {
@@ -23,12 +24,4 @@ class LocationsTests: XCTestCase {
         XCTAssertNotNil(Locations.LocConf.locations)
         XCTAssertEqual(Locations.LocConf.locations.count, 3)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
