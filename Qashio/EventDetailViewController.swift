@@ -2,7 +2,7 @@
 //  EventDetailViewController.swift
 //  Qashio
 //
-//  Created by Guowei Mo on 01/12/2015.
+//  Created by Guowei Mo on 11/12/2015.
 //  Copyright © 2015 Guowei Mo. All rights reserved.
 //
 
@@ -10,10 +10,17 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
 
+    @IBOutlet weak var mainScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var contentRect:CGRect = CGRectZero
+        for view in mainScrollView.subviews as [UIView] {
+            contentRect = CGRectUnion(contentRect, view.frame)
+        }
+        mainScrollView.contentSize = contentRect.size
+
     }
 
     override func didReceiveMemoryWarning() {

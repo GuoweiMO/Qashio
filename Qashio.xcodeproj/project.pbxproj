@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		32F6BE4F5442BB3F1472046A /* Pods_Qashio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8AA4B32B0D9973455A93A /* Pods_Qashio.framework */; };
-		E41B90651C0DDDD30082658C /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B90641C0DDDD30082658C /* EventDetailViewController.swift */; };
+		E420DFE11C1B3894001401EC /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E420DFE01C1B3894001401EC /* EventDetailViewController.swift */; };
+		E420DFE31C1B3F96001401EC /* MoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E420DFE21C1B3F96001401EC /* MoTextField.swift */; };
 		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; };
 		E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */; };
 		E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */; };
@@ -55,8 +56,9 @@
 /* Begin PBXFileReference section */
 		0737C5D7094080679E7238FD /* Pods-Qashio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qashio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qashio/Pods-Qashio.debug.xcconfig"; sourceTree = "<group>"; };
 		B4D83DBE709ABF332D1F5066 /* Pods-Qashio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qashio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qashio/Pods-Qashio.release.xcconfig"; sourceTree = "<group>"; };
-		E41B90641C0DDDD30082658C /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		E41B90661C0F39BA0082658C /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
+		E420DFE01C1B3894001401EC /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		E420DFE21C1B3F96001401EC /* MoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoTextField.swift; sourceTree = "<group>"; };
 		E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E429CD9B1BBFD7C50084FB5D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E429CD9C1BBFD7C50084FB5D /* EventsSumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsSumViewController.swift; sourceTree = "<group>"; };
@@ -145,9 +147,9 @@
 				E429CDA11BBFD7C50084FB5D /* RegisterViewController.swift */,
 				E429CDA21BBFD7C50084FB5D /* SavedListViewController.swift */,
 				E429CDA31BBFD7C50084FB5D /* SearchViewController.swift */,
-				E41B90641C0DDDD30082658C /* EventDetailViewController.swift */,
 				E4D9E0961C1721D900CF9975 /* APIController.swift */,
 				E4D9E09C1C182A9700CF9975 /* AlertController.swift */,
+				E420DFE01C1B3894001401EC /* EventDetailViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -217,6 +219,7 @@
 				E47459EE1C070A77006A58CF /* APIRequest.swift */,
 				E47459F71C088160006A58CF /* EventCell.swift */,
 				E49C82171C0C896D00B88E28 /* Locations.swift */,
+				E420DFE21C1B3F96001401EC /* MoTextField.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -412,9 +415,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E429CDAD1BBFD7C50084FB5D /* SearchViewController.swift in Sources */,
+				E420DFE11C1B3894001401EC /* EventDetailViewController.swift in Sources */,
 				E429CDA91BBFD7C50084FB5D /* LoginViewController.swift in Sources */,
 				E47459EF1C070A77006A58CF /* APIRequest.swift in Sources */,
 				E429CDA51BBFD7C50084FB5D /* CategoryViewController.swift in Sources */,
+				E420DFE31C1B3F96001401EC /* MoTextField.swift in Sources */,
 				E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */,
 				E47459F61C0715EA006A58CF /* SwiftyJSON.swift in Sources */,
 				E49C82181C0C896D00B88E28 /* Locations.swift in Sources */,
@@ -428,7 +433,6 @@
 				E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */,
 				E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */,
 				E429CDA71BBFD7C50084FB5D /* HomeViewController.swift in Sources */,
-				E41B90651C0DDDD30082658C /* EventDetailViewController.swift in Sources */,
 				E47459E71C034781006A58CF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
