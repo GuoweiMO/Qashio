@@ -33,7 +33,6 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewWillAppear(animated: Bool) {
         eventsTableView.dataSource = self
         eventsTableView.delegate = self
-        addEventsData()
     }
     
     @IBAction func willGenerateHomeEvents(sender: AnyObject) {
@@ -163,11 +162,6 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
             self.blurView.removeFromSuperview()
         }
         self.view.backgroundColor = UIColor.whiteColor()
-    }
-    
-    
-    func addEventsData(){
-        APIRequest.APIInstance.getPopEvents()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

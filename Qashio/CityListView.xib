@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SBh-ph-5ko">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkv-Iz-TGP">
+                    <rect key="frame" x="250" y="26" width="100" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0zI-Rd-dql"/>
+                        <constraint firstAttribute="width" constant="100" id="4B0-2Z-Qsv"/>
+                    </constraints>
+                    <state key="normal" title="All Cities">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-Fj-qil">
+                    <rect key="frame" x="250" y="71" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="MVp-vr-UD0"/>
+                        <constraint firstAttribute="width" constant="100" id="cTo-N5-U87"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="London">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2V-1C-Bbl">
+                    <rect key="frame" x="250" y="116" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Dgj-wo-fvB"/>
+                        <constraint firstAttribute="width" constant="100" id="eFL-He-GWb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Birmingham">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaU-ce-tKQ">
+                    <rect key="frame" x="250" y="161" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8PU-qH-KN3"/>
+                        <constraint firstAttribute="width" constant="100" id="fEL-I1-zIE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Manchester">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJc-C8-dtb">
+                    <rect key="frame" x="250" y="206" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="e31-cc-IUi"/>
+                        <constraint firstAttribute="width" constant="100" id="mBM-FU-CqJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Edinburgh">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80C-9v-NFM">
+                    <rect key="frame" x="250" y="251" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="DO4-7Z-pGr"/>
+                        <constraint firstAttribute="height" constant="30" id="Hsp-fm-qt3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Glasgow">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXQ-QC-TMl">
+                    <rect key="frame" x="250" y="296" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="qma-vG-cKk"/>
+                        <constraint firstAttribute="height" constant="30" id="tnM-AK-49n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Belfast">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33356681030000002" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="lkv-Iz-TGP" secondAttribute="trailing" constant="5" id="5Gr-BU-QyG"/>
+                <constraint firstAttribute="trailingMargin" secondItem="PJc-C8-dtb" secondAttribute="trailing" constant="5" id="7Nb-6S-Aqz"/>
+                <constraint firstItem="80C-9v-NFM" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="EHa-9j-0oj"/>
+                <constraint firstAttribute="trailingMargin" secondItem="80C-9v-NFM" secondAttribute="trailing" constant="5" id="Fl4-nI-J5f"/>
+                <constraint firstItem="PJc-C8-dtb" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="LQW-A6-kHd"/>
+                <constraint firstItem="kXQ-QC-TMl" firstAttribute="top" secondItem="80C-9v-NFM" secondAttribute="bottom" constant="15" id="Msh-P5-cGY"/>
+                <constraint firstItem="lkv-Iz-TGP" firstAttribute="top" secondItem="SBh-ph-5ko" secondAttribute="top" constant="26" id="RMG-ol-aYA"/>
+                <constraint firstAttribute="trailingMargin" secondItem="kXQ-QC-TMl" secondAttribute="trailing" constant="5" id="cNg-O5-cGj"/>
+                <constraint firstItem="S2V-1C-Bbl" firstAttribute="top" secondItem="MFt-Fj-qil" secondAttribute="bottom" constant="15" id="dPy-sp-LoK"/>
+                <constraint firstItem="lkv-Iz-TGP" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="e2L-Y1-KId"/>
+                <constraint firstItem="MFt-Fj-qil" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="e6m-h1-mds"/>
+                <constraint firstItem="SaU-ce-tKQ" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="gwg-ap-0KX"/>
+                <constraint firstAttribute="trailingMargin" secondItem="S2V-1C-Bbl" secondAttribute="trailing" constant="5" id="gzh-yb-j7B"/>
+                <constraint firstItem="SaU-ce-tKQ" firstAttribute="top" secondItem="S2V-1C-Bbl" secondAttribute="bottom" constant="15" id="jZU-h8-dkO"/>
+                <constraint firstItem="MFt-Fj-qil" firstAttribute="top" secondItem="lkv-Iz-TGP" secondAttribute="bottom" constant="15" id="mub-Bv-Ejt"/>
+                <constraint firstAttribute="trailingMargin" secondItem="MFt-Fj-qil" secondAttribute="trailing" constant="5" id="naz-8m-kLM"/>
+                <constraint firstItem="PJc-C8-dtb" firstAttribute="top" secondItem="SaU-ce-tKQ" secondAttribute="bottom" constant="15" id="rvz-sE-e4J"/>
+                <constraint firstAttribute="trailingMargin" secondItem="SaU-ce-tKQ" secondAttribute="trailing" constant="5" id="vec-et-3m3"/>
+                <constraint firstItem="S2V-1C-Bbl" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="wbm-uP-okb"/>
+                <constraint firstItem="80C-9v-NFM" firstAttribute="top" secondItem="PJc-C8-dtb" secondAttribute="bottom" constant="15" id="xKc-Q9-cAq"/>
+                <constraint firstItem="kXQ-QC-TMl" firstAttribute="centerX" secondItem="SBh-ph-5ko" secondAttribute="centerX" id="ycj-V8-2PH"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="5Gr-BU-QyG"/>
+                    <exclude reference="naz-8m-kLM"/>
+                    <exclude reference="gzh-yb-j7B"/>
+                    <exclude reference="vec-et-3m3"/>
+                    <exclude reference="7Nb-6S-Aqz"/>
+                    <exclude reference="Fl4-nI-J5f"/>
+                    <exclude reference="cNg-O5-cGj"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

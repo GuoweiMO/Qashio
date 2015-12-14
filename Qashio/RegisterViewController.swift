@@ -27,6 +27,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     var originalImage:UIImage?
     var API : APIController?
     let localData = NSUserDefaults.standardUserDefaults()
+    var optionMenu:UIAlertController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +53,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         originalImage = selfImageView.image
         
         API = APIController(delegate: self)
+        let tapImage = UITapGestureRecognizer(target: self, action: "pushImageOption:")
+        selfImageView.addGestureRecognizer(tapImage)
     }
     
     func keyboardDidShow(notification: NSNotification){
@@ -71,11 +74,33 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     /********************************
         Upload Image from Library
      ************************************/
-    @IBAction func uploadSelfImage(sender: AnyObject) {
+    func uploadSelfImage() {
         let imagePicker:UIImagePickerController = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .PhotoLibrary
         self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func createImageUploadActionSheet(){
+        optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
+        
+        let addImageAction = UIAlertAction(title: "Add Image", style: .Default, handler: {
+            (alert:UIAlertAction) in
+            self.uploadSelfImage()
+        })
+        
+        let removeImageAction = UIAlertAction(title: "Delete Image", style: .Default, handler: {
+            (alert:UIAlertAction) in
+            self.removeUploadedImage()
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (alert: UIAlertAction) in
+            print("Cancelled")
+        })
+        optionMenu?.addAction(addImageAction)
+        optionMenu?.addAction(removeImageAction)
+        optionMenu?.addAction(cancelAction)
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
@@ -89,9 +114,16 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func removeUploadedImage(sender: AnyObject) {
+    func removeUploadedImage() {
         selfImageView.image = originalImage
 
+    }
+    
+    func pushImageOption(sender: UITapGestureRecognizer){
+        if optionMenu == nil {
+            createImageUploadActionSheet()
+        }
+        self.presentViewController(optionMenu!, animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
