@@ -51,6 +51,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 80
     }
+    
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView:UIView = UIView()
         let monthBackGroundView:UIImageView = UIImageView(image: UIImage(named: "month_oval"))
@@ -81,8 +82,19 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell?.cellNameLabel.text = "Apple"
         cell?.cellVenueLabel.text = "1 Infinite Loop, Cupertino, CA 95014"
         cell?.cellDateLabel.text = String(indexPath.row+1)
+//        cell?.numOfLikeLabel.text = "❤️"
         
         return cell!
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "show_event_detail" {
+            let eventDetailVC:EventDetailViewController = segue.destinationViewController as! EventDetailViewController
+            let eventIndex = homeTableView!.indexPathForSelectedRow!.row
+//            let eventItem = self.EventList[eventIndex]
+//            eventDetailVC.eventItem = eventItem
+
+        }
     }
 
     override func didReceiveMemoryWarning() {

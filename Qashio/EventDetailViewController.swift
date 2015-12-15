@@ -8,9 +8,11 @@
 
 import UIKit
 
-class EventDetailViewController: UIViewController {
+class EventDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var speakersCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +22,11 @@ class EventDetailViewController: UIViewController {
             contentRect = CGRectUnion(contentRect, view.frame)
         }
         mainScrollView.contentSize = contentRect.size
-
+        
+        speakersCollectionView.dataSource = self
+        speakersCollectionView.delegate = self
+        speakersCollectionView.pagingEnabled = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,5 +44,21 @@ class EventDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let speakerCell = collectionView.dequeueReusableCellWithReuseIdentifier("event_speaker_cell", forIndexPath: indexPath) as! UserInfoCell
+        speakerCell.userImageButton.setBackgroundImage(UIImage(named: "logo-1"), forState: .Normal)
+        speakerCell.userNameLabel.text = "Steve Jobs"
+        speakerCell.userTitleLabel.text = "CEO of Apple"
+        
+        return speakerCell
+    }
 
 }

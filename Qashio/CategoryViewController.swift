@@ -44,6 +44,7 @@ class CategoryViewController: UIViewController {
             cateBtns.append(cateBtn)
             cateBtn.frame = CGRect(x: Int(centerPt-50) , y: 20+140*i, width:100, height: 100)
             cateBtn.setTitle(categoryItem.0, forState: .Normal ) //String(Int(arc4random_uniform(12)))
+            cateBtn.titleLabel?.font = UIFont(name: "", size: 14)
             let cateLabel = UILabel()
             cateLabel.text = categoryItem.0
             cateLabel.frame = CGRect(x: 0 , y: cateBtn.frame.origin.y+110, width: UIScreen.mainScreen().bounds.width, height: 20)

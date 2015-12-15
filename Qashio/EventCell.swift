@@ -16,6 +16,7 @@ class EventCell: UITableViewCell  {
     @IBOutlet weak var cellCategoryBtn: UIButton!
     @IBOutlet weak var cellNameLabel: UILabel!
     @IBOutlet weak var cellVenueLabel: UILabel!
+    @IBOutlet weak var numOfLikeLabel: UILabel!
 //    @IBOutlet weak var cellDateBtn: UIButton!
     
     @IBOutlet weak var cellDateLabel: UILabel!

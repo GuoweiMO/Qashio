@@ -195,6 +195,7 @@ class EventSumViewController: UIViewController, UITableViewDataSource, UITableVi
         cell?.cellNameLabel.text = "Apple"
         cell?.cellVenueLabel.text = "1 Infinite Loop, Cupertino, CA 95014"
         cell?.cellDateLabel.text = String(indexPath.row+1)
+        cell?.numOfLikeLabel.text = "❤️" + String(500 - indexPath.row)
         
         return cell!
     }
