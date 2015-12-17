@@ -14,8 +14,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
 //    var scrollView:UIScrollView!
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: MoTextField!
+    @IBOutlet weak var passwordField: MoTextField!
+    @IBOutlet weak var nameField: MoTextField!
+    @IBOutlet weak var companyField: MoTextField!
+    @IBOutlet weak var jobTitleField: MoTextField!
+    @IBOutlet weak var industryField: MoTextField!
     
     @IBOutlet weak var socialMediaBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
@@ -42,8 +46,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         
         socialMediaBtn.layer.cornerRadius = 5
         registerBtn.layer.cornerRadius = 5
+        
         emailField.delegate = self
         passwordField.delegate = self
+        nameField.delegate = self
+        companyField.delegate = self
+        jobTitleField.delegate = self
+        industryField.delegate = self
         
         baseScrollHeight = scrollView.contentSize.height
         
@@ -82,7 +91,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     }
     
     func createImageUploadActionSheet(){
-        optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
+        optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
         
         let addImageAction = UIAlertAction(title: "Add Image", style: .Default, handler: {
             (alert:UIAlertAction) in
@@ -111,7 +120,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         selfImageView.contentMode = .ScaleToFill
         selfImageView.image = chosenImage
-        dismissViewControllerAnimated(true, completion: nil)
+//        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func removeUploadedImage() {
@@ -128,8 +137,42 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        let moTextField:MoTextField = textField as! MoTextField
+        switch  moTextField {
+            case self.emailField:
+                self.passwordField.becomeFirstResponder()
+                break
+            case self.passwordField:
+                self.nameField.becomeFirstResponder()
+                break
+            case self.nameField:
+                self.companyField.becomeFirstResponder()
+                break
+            case self.companyField:
+                self.jobTitleField.becomeFirstResponder()
+                break
+            case self.jobTitleField:
+                self.industryField.becomeFirstResponder()
+                break
+            case self.industryField:
+                self.processUserSignup(textField)
+                break
+            default:
+            break
+        }
+        
         scrollView.contentSize.height = baseScrollHeight!
         return true
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        var rect = self.view.frame
+        let pos = textField.frame
+        if pos.origin.y >= rect.size.height - 90 {
+            rect.origin.y -= 90
+        }
+        self.view.frame = rect
+        UIView.commitAnimations()
     }
     
     
@@ -138,16 +181,18 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         let userPassword:String? = passwordField.text
 
         if !userEmail!.isEmpty && !userPassword!.isEmpty {
-            let params = [
-                "username"  :  userEmail!,
-                "password"  :  userPassword!,
-                "type"      :  "add"
+            if Utils.validateEmailFormat(userEmail!) {
+                let params = [
+                    "username"  :  userEmail!,
+                    "password"  :  userPassword!,
+                    "type"      :  "add"
                 ]
                 API?.registerNewUser(params)
-            
             } else{
-            AlertController.presentErrorAlert(self, msg: "You have not filled all the required information")
-            
+                AlertController.presentErrorAlert(self, msg: "Your UserName is not a valid email address")
+            }
+        } else{
+             AlertController.presentErrorAlert(self, msg: "You have not filled all the required information")
         }
     }
     

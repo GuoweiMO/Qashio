@@ -20,6 +20,7 @@
 		E4044D121C2043AA004FBD9E /* business-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = E4044D071C2043AA004FBD9E /* business-ico.png */; };
 		E4044D131C2043AA004FBD9E /* Oval.png in Resources */ = {isa = PBXBuildFile; fileRef = E4044D081C2043AA004FBD9E /* Oval.png */; };
 		E4044D141C2043AA004FBD9E /* month_oval.png in Resources */ = {isa = PBXBuildFile; fileRef = E4044D091C2043AA004FBD9E /* month_oval.png */; };
+		E4044D161C20646B004FBD9E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4044D151C20646B004FBD9E /* Utils.swift */; };
 		E420DFE11C1B3894001401EC /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E420DFE01C1B3894001401EC /* EventDetailViewController.swift */; };
 		E420DFE31C1B3F96001401EC /* MoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E420DFE21C1B3F96001401EC /* MoTextField.swift */; };
 		E429CDA41BBFD7C50084FB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */; };
@@ -82,6 +83,7 @@
 		E4044D071C2043AA004FBD9E /* business-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business-ico.png"; sourceTree = "<group>"; };
 		E4044D081C2043AA004FBD9E /* Oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oval.png; sourceTree = "<group>"; };
 		E4044D091C2043AA004FBD9E /* month_oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month_oval.png; sourceTree = "<group>"; };
+		E4044D151C20646B004FBD9E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E41B90661C0F39BA0082658C /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
 		E420DFE01C1B3894001401EC /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		E420DFE21C1B3F96001401EC /* MoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoTextField.swift; sourceTree = "<group>"; };
@@ -228,8 +230,8 @@
 				E48B0EE71C1EC53500FB6438 /* views */,
 				E46EA0BE1BF2A4890057BE65 /* models */,
 				E429CD991BBFD79B0084FB5D /* controllers */,
-				E4044CFE1C204395004FBD9E /* resources */,
 				E48B0EE81C1EC55500FB6438 /* UI */,
+				E4044CFE1C204395004FBD9E /* resources */,
 				E429CD9A1BBFD7C50084FB5D /* AppDelegate.swift */,
 				E45394521BBFD38A001040EC /* Info.plist */,
 				E45394741BBFD3DF001040EC /* Qashio-Bridging-Header.h */,
@@ -265,6 +267,7 @@
 				E48B0EEF1C1F121F00FB6438 /* EventItem.swift */,
 				E48B0EF11C1F123D00FB6438 /* EventList.swift */,
 				E48B0EF31C1F14E700FB6438 /* EventUser.swift */,
+				E4044D151C20646B004FBD9E /* Utils.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				E47459ED1C03857C006A58CF /* MoButton.swift in Sources */,
 				E429CDAB1BBFD7C50084FB5D /* RegisterViewController.swift in Sources */,
 				E429CDA61BBFD7C50084FB5D /* EventsSumViewController.swift in Sources */,
+				E4044D161C20646B004FBD9E /* Utils.swift in Sources */,
 				E429CDAA1BBFD7C50084FB5D /* ProfileViewController.swift in Sources */,
 				E48B0EF01C1F121F00FB6438 /* EventItem.swift in Sources */,
 				E429CDA81BBFD7C50084FB5D /* LandingViewController.swift in Sources */,

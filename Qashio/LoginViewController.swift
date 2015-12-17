@@ -46,8 +46,11 @@ class LoginViewController: UIViewController, APIControllerProtocol {
             "password"  : passWord.text!,
             "type"      : "check"
         ]
-        
-        API?.verifyLogin(params)
+        if Utils.validateEmailFormat(userName.text!) {
+            API?.verifyLogin(params)
+        } else{
+            AlertController.presentErrorAlert(self, msg: "Your UserName is not a valid email address")
+        }
     }
     
     func didReceiveAPIResults(results: NSDictionary) {

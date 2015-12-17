@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application initializes.
         
         //control the initial viewController
-        self.userLoggedIn = self.verifyuserInfo()
+        self.userLoggedIn = self.verifyuserInfoNatively()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let storyboard: UIStoryboard = UIStoryboard( name: "Main", bundle: nil)
         var viewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("landing") ;
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func verifyuserInfo() -> Bool{
+    func verifyuserInfoNatively() -> Bool{
         var userLoggedIn:Bool = false
         let localData = NSUserDefaults.standardUserDefaults()
         let userName = localData.valueForKey("USER_NAME") as? String

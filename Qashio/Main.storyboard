@@ -583,7 +583,7 @@
                                     <constraint firstAttribute="height" constant="50" id="ffu-w8-MM9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="5LI-Ga-VcX"/>
@@ -1121,17 +1121,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  EMAIL*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZB-iQ-fG8" customClass="MoTextField" customModule="Qashio" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="235" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="220" width="545" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" label="email"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="497" id="5Zo-sm-N5e"/>
-                                            <constraint firstAttribute="height" constant="46" id="GcH-fz-1OX"/>
+                                            <constraint firstAttribute="height" constant="40" id="GcH-fz-1OX"/>
                                             <constraint firstAttribute="width" constant="497" id="hy5-uA-f2J"/>
                                             <constraint firstAttribute="width" constant="497" id="jnV-ex-tvp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="5Zo-sm-N5e"/>
@@ -1141,14 +1141,14 @@
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  NAME*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4e-xD-dfL" customClass="MoTextField" customModule="Qashio" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="357" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="320" width="545" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="497" id="TLB-6d-cpR"/>
-                                            <constraint firstAttribute="height" constant="46" id="Up7-tx-xje"/>
+                                            <constraint firstAttribute="height" constant="40" id="Up7-tx-xje"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="TLB-6d-cpR"/>
@@ -1156,15 +1156,15 @@
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  PASSWORD*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qd0-eL-ivb" customClass="MoTextField" customModule="Qashio" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="296" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="270" width="545" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" label="password"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="497" id="IPQ-k6-bZb"/>
-                                            <constraint firstAttribute="height" constant="46" id="yhK-QP-3q3"/>
+                                            <constraint firstAttribute="height" constant="40" id="yhK-QP-3q3"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="IPQ-k6-bZb"/>
@@ -1172,11 +1172,11 @@
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  TITLE*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVr-Co-igP" customClass="MoTextField" customModule="Qashio" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="479" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="420" width="545" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="497" id="8NP-n5-vqE"/>
-                                            <constraint firstAttribute="height" constant="46" id="Bj7-Hv-dBG"/>
+                                            <constraint firstAttribute="height" constant="40" id="Bj7-Hv-dBG"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -1187,14 +1187,14 @@
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  INDUSTRY*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eak-Z5-iOU" customClass="MoTextField" customModule="Qashio" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="540" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="470" width="545" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="bbh-nF-RTg"/>
+                                            <constraint firstAttribute="height" constant="40" id="bbh-nF-RTg"/>
                                             <constraint firstAttribute="width" constant="497" id="glT-Jj-f1T"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="glT-Jj-f1T"/>
@@ -1202,14 +1202,14 @@
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  COMPANY*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGa-6q-HVy" customClass="MoTextField" customModule="Qashio" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="418" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="370" width="545" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="497" id="hbz-zx-Bb6"/>
-                                            <constraint firstAttribute="height" constant="46" id="lOg-v6-Quo"/>
+                                            <constraint firstAttribute="height" constant="40" id="lOg-v6-Quo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="hbz-zx-Bb6"/>
@@ -1217,11 +1217,11 @@
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gi-A2-Ows">
-                                        <rect key="frame" x="28" y="667" width="545" height="50"/>
+                                        <rect key="frame" x="28" y="580" width="545" height="40"/>
                                         <color key="backgroundColor" red="0.2784313725" green="0.16078431369999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="signup"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="hSG-VG-ni4"/>
+                                            <constraint firstAttribute="height" constant="40" id="hSG-VG-ni4"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="w2Z-VY-kuv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -1240,16 +1240,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPT-QL-VXS">
-                                        <rect key="frame" x="28" y="606" width="545" height="46"/>
+                                        <rect key="frame" x="28" y="530" width="545" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="7cm-Ty-rfj"/>
+                                            <constraint firstAttribute="height" constant="40" id="7cm-Ty-rfj"/>
                                             <constraint firstAttribute="width" constant="228" id="Cx9-mO-kmj"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="DTv-yq-HYU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="tintColor" red="0.00074140717159999997" green="0.00069093522400000002" blue="0.001736111111" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Add Social Media">
+                                        <state key="normal" title="Sign up with LinkedIn ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="default">
@@ -1260,7 +1260,7 @@
                                         </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pq-p9-gLu">
-                                        <rect key="frame" x="298" y="737" width="275" height="30"/>
+                                        <rect key="frame" x="298" y="640" width="275" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="275" id="i0C-cf-lOk"/>
                                             <constraint firstAttribute="height" constant="30" id="wTB-K9-xXU"/>
@@ -1274,7 +1274,7 @@
                                         </connections>
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-ph-ico" translatesAutoresizingMaskIntoConstraints="NO" id="A60-oq-wo1">
-                                        <rect key="frame" x="217" y="28" width="165" height="170"/>
+                                        <rect key="frame" x="217" y="30" width="165" height="170"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="165" id="3Vj-WC-rvK"/>
@@ -1287,8 +1287,8 @@
                                     <constraint firstItem="eak-Z5-iOU" firstAttribute="leading" secondItem="RPT-QL-VXS" secondAttribute="leading" id="1ZY-Wf-NZR"/>
                                     <constraint firstItem="BVr-Co-igP" firstAttribute="trailing" secondItem="NGa-6q-HVy" secondAttribute="trailing" id="220-Lg-oUB"/>
                                     <constraint firstItem="RPT-QL-VXS" firstAttribute="top" secondItem="eak-Z5-iOU" secondAttribute="bottom" constant="20" id="3Jn-R0-Zf8"/>
-                                    <constraint firstItem="NGa-6q-HVy" firstAttribute="top" secondItem="B4e-xD-dfL" secondAttribute="bottom" constant="15" id="59F-DG-RFK"/>
-                                    <constraint firstItem="A60-oq-wo1" firstAttribute="top" secondItem="oLy-k1-wtG" secondAttribute="top" constant="28" id="6gy-ox-tb2"/>
+                                    <constraint firstItem="NGa-6q-HVy" firstAttribute="top" secondItem="B4e-xD-dfL" secondAttribute="bottom" constant="10" id="59F-DG-RFK"/>
+                                    <constraint firstItem="A60-oq-wo1" firstAttribute="top" secondItem="oLy-k1-wtG" secondAttribute="top" constant="30" id="6gy-ox-tb2"/>
                                     <constraint firstItem="B4e-xD-dfL" firstAttribute="leading" secondItem="Qd0-eL-ivb" secondAttribute="leading" id="85A-K6-WYu"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="pZB-iQ-fG8" secondAttribute="trailing" constant="20" id="9ae-VN-j3p"/>
                                     <constraint firstItem="RPT-QL-VXS" firstAttribute="leading" secondItem="5gi-A2-Ows" secondAttribute="leading" id="9us-jb-jsl"/>
@@ -1296,22 +1296,22 @@
                                     <constraint firstItem="pZB-iQ-fG8" firstAttribute="leading" secondItem="Qd0-eL-ivb" secondAttribute="leading" id="ApM-sG-Uec"/>
                                     <constraint firstItem="NGa-6q-HVy" firstAttribute="leading" secondItem="B4e-xD-dfL" secondAttribute="leading" id="GXk-OB-jXn"/>
                                     <constraint firstItem="6Pq-p9-gLu" firstAttribute="top" secondItem="5gi-A2-Ows" secondAttribute="bottom" constant="20" id="KiH-hm-xEl"/>
-                                    <constraint firstItem="eak-Z5-iOU" firstAttribute="top" secondItem="BVr-Co-igP" secondAttribute="bottom" constant="15" id="OaW-tD-Q7k"/>
+                                    <constraint firstItem="eak-Z5-iOU" firstAttribute="top" secondItem="BVr-Co-igP" secondAttribute="bottom" constant="10" id="OaW-tD-Q7k"/>
                                     <constraint firstItem="5gi-A2-Ows" firstAttribute="trailing" secondItem="6Pq-p9-gLu" secondAttribute="trailing" id="Qcg-xW-bsJ"/>
                                     <constraint firstItem="pZB-iQ-fG8" firstAttribute="centerX" secondItem="oLy-k1-wtG" secondAttribute="centerX" id="XFx-pF-Qh6"/>
                                     <constraint firstItem="BVr-Co-igP" firstAttribute="leading" secondItem="eak-Z5-iOU" secondAttribute="leading" id="aaO-yH-UTl"/>
-                                    <constraint firstItem="BVr-Co-igP" firstAttribute="top" secondItem="NGa-6q-HVy" secondAttribute="bottom" constant="15" id="deV-kz-f8M"/>
-                                    <constraint firstItem="Qd0-eL-ivb" firstAttribute="top" secondItem="pZB-iQ-fG8" secondAttribute="bottom" constant="15" id="gzu-jJ-oI1"/>
+                                    <constraint firstItem="BVr-Co-igP" firstAttribute="top" secondItem="NGa-6q-HVy" secondAttribute="bottom" constant="10" id="deV-kz-f8M"/>
+                                    <constraint firstItem="Qd0-eL-ivb" firstAttribute="top" secondItem="pZB-iQ-fG8" secondAttribute="bottom" constant="10" id="gzu-jJ-oI1"/>
                                     <constraint firstItem="NGa-6q-HVy" firstAttribute="leading" secondItem="BVr-Co-igP" secondAttribute="leading" id="heD-e7-iBu"/>
                                     <constraint firstItem="pZB-iQ-fG8" firstAttribute="trailing" secondItem="Qd0-eL-ivb" secondAttribute="trailing" id="jeZ-Wz-Wgh"/>
                                     <constraint firstItem="A60-oq-wo1" firstAttribute="centerX" secondItem="oLy-k1-wtG" secondAttribute="centerX" id="jj9-SH-X1Y"/>
                                     <constraint firstItem="pZB-iQ-fG8" firstAttribute="leading" secondItem="oLy-k1-wtG" secondAttribute="leadingMargin" constant="20" id="lnN-8V-BvC"/>
                                     <constraint firstItem="Qd0-eL-ivb" firstAttribute="trailing" secondItem="B4e-xD-dfL" secondAttribute="trailing" id="mID-Tz-T13"/>
                                     <constraint firstItem="eak-Z5-iOU" firstAttribute="trailing" secondItem="BVr-Co-igP" secondAttribute="trailing" id="ptt-4S-QAj"/>
-                                    <constraint firstItem="pZB-iQ-fG8" firstAttribute="top" secondItem="oLy-k1-wtG" secondAttribute="top" constant="235" id="tzH-zw-EYM"/>
-                                    <constraint firstItem="B4e-xD-dfL" firstAttribute="top" secondItem="Qd0-eL-ivb" secondAttribute="bottom" constant="15" id="wkd-1u-ybr"/>
+                                    <constraint firstItem="pZB-iQ-fG8" firstAttribute="top" secondItem="oLy-k1-wtG" secondAttribute="top" constant="220" id="tzH-zw-EYM"/>
+                                    <constraint firstItem="B4e-xD-dfL" firstAttribute="top" secondItem="Qd0-eL-ivb" secondAttribute="bottom" constant="10" id="wkd-1u-ybr"/>
                                     <constraint firstItem="5gi-A2-Ows" firstAttribute="trailing" secondItem="RPT-QL-VXS" secondAttribute="trailing" id="x6t-0W-c8u"/>
-                                    <constraint firstItem="5gi-A2-Ows" firstAttribute="top" secondItem="RPT-QL-VXS" secondAttribute="bottom" constant="15" id="zUC-jW-A0s"/>
+                                    <constraint firstItem="5gi-A2-Ows" firstAttribute="top" secondItem="RPT-QL-VXS" secondAttribute="bottom" constant="10" id="zUC-jW-A0s"/>
                                     <constraint firstAttribute="bottom" secondItem="6Pq-p9-gLu" secondAttribute="bottom" constant="10" id="zYe-gS-Ads"/>
                                     <constraint firstItem="B4e-xD-dfL" firstAttribute="trailing" secondItem="NGa-6q-HVy" secondAttribute="trailing" id="zsg-Oo-Xvn"/>
                                 </constraints>
@@ -1330,7 +1330,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="800"/>
                     <connections>
+                        <outlet property="companyField" destination="NGa-6q-HVy" id="eE8-Sg-Ohh"/>
                         <outlet property="emailField" destination="pZB-iQ-fG8" id="HYs-Fx-gO4"/>
+                        <outlet property="industryField" destination="eak-Z5-iOU" id="JU4-jT-MHk"/>
+                        <outlet property="jobTitleField" destination="BVr-Co-igP" id="Tsa-Lz-vqN"/>
+                        <outlet property="nameField" destination="B4e-xD-dfL" id="mF6-HL-aSt"/>
                         <outlet property="passwordField" destination="Qd0-eL-ivb" id="iwy-Wt-xYv"/>
                         <outlet property="registerBtn" destination="5gi-A2-Ows" id="xnn-2m-sCQ"/>
                         <outlet property="scrollView" destination="oLy-k1-wtG" id="wdM-U6-ims"/>
