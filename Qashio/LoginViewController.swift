@@ -42,7 +42,7 @@ class LoginViewController: UIViewController, APIControllerProtocol {
         }
         
         let params = [
-            "username"  : userName.text!,
+            "userName"  : userName.text!,
             "password"  : passWord.text!,
             "type"      : "check"
         ]

@@ -165,28 +165,34 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         return true
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
-        var rect = self.view.frame
-        let pos = textField.frame
-        if pos.origin.y >= rect.size.height - 90 {
-            rect.origin.y -= 90
-        }
-        self.view.frame = rect
-        UIView.commitAnimations()
-    }
+//    func textFieldDidBeginEditing(textField: UITextField) {
+//        if textField.frame.origin.y >= self.view.frame.size.height-258 {
+//            scrollView.setContentOffset(CGPoint(x: 0, y: 216), animated: true)
+//        }
+//    }
     
     
     @IBAction func processUserSignup(sender: AnyObject) {
         let userEmail:String? = emailField.text
         let userPassword:String? = passwordField.text
+        let userFullName:String? = nameField.text
+        let userJobTitle:String? = jobTitleField.text
+        let userCompany:String? = companyField.text
+        let userIndustry:String? = industryField.text
 
-        if !userEmail!.isEmpty && !userPassword!.isEmpty {
+        if !userEmail!.isEmpty && !userPassword!.isEmpty && !userFullName!.isEmpty
+            && !userJobTitle!.isEmpty && !userCompany!.isEmpty && !userIndustry!.isEmpty {
             if Utils.validateEmailFormat(userEmail!) {
                 let params = [
-                    "username"  :  userEmail!,
+                    "userName"  :  userEmail!,
                     "password"  :  userPassword!,
+                    "fullName"  :  userFullName!,
+                    "jobTitle"  :  userJobTitle!,
+                    "company"   :  userCompany!,
+                    "industry"  :  userIndustry!,
                     "type"      :  "add"
                 ]
+                print(params)
                 API?.registerNewUser(params)
             } else{
                 AlertController.presentErrorAlert(self, msg: "Your UserName is not a valid email address")
